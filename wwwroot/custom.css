@@ -1,4 +1,7 @@
 /*Custom Css Rules, mostly for the purpose of overriding bootstrap defaults*/
+:host {
+    --primary-blue: #102455;
+}
 
 /*Buttons*/
 
@@ -25,4 +28,17 @@
 #section-insurance a {
     margin-top: 10px;
     padding: 15px 40px;
+}
+
+#section-phone {
+    margin-top: 0px;
+    background-color: #50669a;
+    text-align: center;
+}
+
+#section-phone__main-container {
+}
+
+#section-phone__main-container h5 {
+    margin-bottom: 0px;
 }
