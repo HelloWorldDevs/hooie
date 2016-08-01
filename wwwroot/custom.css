@@ -9,4 +9,15 @@
 .btn-danger {
     background-color: #F55433;
     border-color: #f5f5f5;
+    text-transform: uppercase;
+}
+
+#down-arrow {
+    width: 50px;
+    display: block;
+    margin: 35px auto;
+}
+
+.slider-caption h2 {
+    text-transform: none;
 }
