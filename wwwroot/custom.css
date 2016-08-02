@@ -30,11 +30,6 @@
     text-transform: none;
 }
 
-#section-insurance a {
-    margin-top: 10px;
-    padding: 15px 40px;
-}
-
 .dark {
     margin-top: 0px;
     background-color: #50669a;
@@ -151,6 +146,36 @@ section {
     background-color: white;
 }
 
+/*Insurance*/
+
+#section-insurance {
+    background-image: url('images/membership-bkgd.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+#section-insurance a {
+    margin-top: 15px;
+    margin-bottom: 25px;
+    padding: 15px 40px;
+}
+
+#section-insurance h1,h4,h5,a {
+    color: white;
+}
+
+#section-insurance h5 {
+    margin-bottom: 5px;
+}
+
+#section-insurance h5:nth-last-child(2) {
+    margin-bottom: 60px;
+}
+
+#section-insurance .row {
+    margin-top: 75px;
+    margin-bottom: 75px;
+}
 /*Headers*/
 
 .heading-block {
