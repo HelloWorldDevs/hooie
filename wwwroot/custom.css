@@ -25,6 +25,7 @@
     margin: 35px auto;
 }
 
+#primary-menu
 .slider-caption h2 {
     text-transform: none;
 }
@@ -63,4 +64,17 @@
 
 #section-team {
     text-align: center;
+}
+
+/*nav*/
+#primary-menu ul li:nth-child(1)>a {
+    color: #f55433;
+}
+
+#primary-menu ul li:nth-child(2)>a {
+    color: #830000;
+}
+
+#primary-menu ul li:nth-child(3)>a {
+    color: blue;
 }
