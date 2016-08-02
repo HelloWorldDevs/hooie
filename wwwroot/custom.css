@@ -35,30 +35,30 @@
     padding: 15px 40px;
 }
 
-#section-phone {
+.dark {
     margin-top: 0px;
     background-color: #50669a;
     text-align: center;
 }
 
-#section-phone .section-phone__left {
+.section-phone__left {
     text-align: right;
 }
 
-#section-phone .section-phone__left h5, h2 {
+.section-phone__left h5, h2 {
     margin-bottom: 0px;
 }
 
-#section-phone .section-phone__left h2 {
+.section-phone__left h2 {
     margin-bottom: 0px;
 }
 
-#section-phone .section-phone__right {
+.section-phone__right {
     margin-top: 15px;
     text-align: left;
 }
 
-#section-phone .section-phone__right a {
+.section-phone__right a {
     margin: 10px 16px;
 }
 
@@ -84,4 +84,8 @@
 .quoter {
     color: white;
     font-size: 60%;
+}
+
+section {
+    border: 2px dashed tomato;
 }
