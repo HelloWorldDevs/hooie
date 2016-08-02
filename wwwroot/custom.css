@@ -86,11 +86,77 @@
     font-size: 60%;
 }
 
+.big-quote {
+    font-size: 200%;
+    color: #f55433;
+}
+
 .glyphicon-star {
     color: gold;
 }
+
 /*Utilties*/
 
 section {
     border: 2px dashed tomato;
+}
+
+/*Reviews*/
+
+#section-reviews {
+    background-color: #eeeeee;
+}
+
+#section-reviews__header {
+    height: 300px;
+    background-image: url('images/specials-photo.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+#section-reviews__header .row {
+    margin-top: 20px;
+}
+
+#section-reviews__header a {
+    margin-left: 40px;
+}
+
+#section-reviews__header h1, h5 {
+    color: black;
+}
+
+#section-reviews__header h5 {
+    text-align: right;
+}
+
+#section-reviews__table p {
+    margin-bottom: 0px;
+    background-color: white;
+}
+
+#section-reviews__table p:last-child {
+    text-align: right;
+}
+
+#section-reviews__table {
+    padding: 0px;
+    border: 1px solid #cccccc;
+    overflow-y: auto;
+    height: 400px;
+}
+
+#section-reviews__table table {
+    margin: 0px;
+    background-color: white;
+}
+
+/*Headers*/
+
+.heading-block {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.heading-block h2 {
+    color: blue;
 }
