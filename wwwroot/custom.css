@@ -244,6 +244,34 @@ section {
 
 #section-services a {
     color: Red;
-    text-decoration: underline;
+    text-decoration: underline !important;
     text-align: right;
+}
+
+#section-services__footer {
+    background-color: #50669a;
+}
+
+#section-services__footer h4 {
+    color: white;
+    padding: 10px;
+}
+
+.section-services__service-tile {
+    margin-bottom: 15px;
+}
+
+.section-services__service-tile a {
+    float: right;
+}
+
+.section-services__service-tile__container {
+    padding: 0px 10px;
+}
+
+/*Gallery*/
+
+#section-gallery p:first-child {
+    margin-top: 20px;
+    margin-bottom: 0px;
 }
