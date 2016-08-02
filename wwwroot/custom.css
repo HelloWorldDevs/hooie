@@ -25,15 +25,21 @@
     margin: 35px auto;
 }
 
-#primary-menu
+
 .slider-caption h2 {
     text-transform: none;
 }
 
 .dark {
     margin-top: 0px;
-    background-color: #50669a;
+    background-color: #50669a !important;
     text-align: center;
+}
+
+/*Phone*/
+
+#section-phone {
+    margin-bottom: 0px;
 }
 
 .section-phone__left {
@@ -57,11 +63,43 @@
     margin: 10px 16px;
 }
 
+/*Team*/
+
 #section-team {
     text-align: center;
 }
 
-/*nav*/
+#section-team .row>div:first-child {
+    padding-right: 0px;
+}
+
+#section-team__main-photo {
+    background-image: url('images/hooie-bio.jpg');
+    height: 400px;
+    background-size: cover;
+    background-position: center center;
+}
+
+#section-team__hooie-bio {
+    background-image: url('images/office-photo-hooie.jpg');
+    height: 400px;
+    overflow-y: scroll;
+}
+/*nav(header)*/
+
+#header-wrap {
+    height: 90px !important;
+}
+
+#header-wrap img {
+    height: 90px !important;
+    margin-top: 3px;
+}
+
+#primary-menu ul li>a {
+    padding-top: 34px !important;
+    padding-bottom: 34px !important;
+}
 #primary-menu ul li:nth-child(1)>a {
     color: #f55433;
 }
@@ -93,7 +131,7 @@
 /*Utilties*/
 
 section {
-    border: 2px dashed tomato;
+    /*border: 2px dashed tomato;*/
 }
 
 /*Reviews*/
@@ -174,8 +212,8 @@ section {
 }
 
 #section-insurance .row {
-    margin-top: 75px;
-    margin-bottom: 75px;
+    padding-top: 75px;
+    padding-bottom: 75px;
 }
 /*Headers*/
 
