@@ -86,6 +86,11 @@
     font-size: 60%;
 }
 
+.glyphicon-star {
+    color: gold;
+}
+/*Utilties*/
+
 section {
     border: 2px dashed tomato;
 }
