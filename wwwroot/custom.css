@@ -40,11 +40,25 @@
     text-align: center;
 }
 
-#section-phone__main-container {
+#section-phone .section-phone__left {
+    text-align: right;
 }
 
-#section-phone__main-container h5 {
+#section-phone .section-phone__left h5, h2 {
     margin-bottom: 0px;
+}
+
+#section-phone .section-phone__left h2 {
+    margin-bottom: 0px;
+}
+
+#section-phone .section-phone__right {
+    margin-top: 15px;
+    text-align: left;
+}
+
+#section-phone .section-phone__right a {
+    margin: 10px 16px;
 }
 
 #section-team {
