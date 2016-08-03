@@ -143,6 +143,10 @@
     color: gold;
 }
 
+.table {
+    margin-bottom: 0px;
+}
+
 /*Utilties*/
 
 section {
@@ -275,3 +279,67 @@ section {
     margin-top: 20px;
     margin-bottom: 0px;
 }
+
+/*Contact*/
+
+#section-location h1,h2,h3,h5 {
+    margin: 0px;
+}
+
+#section-location h1,h2,h3 {
+    color: red;
+}
+
+#section-location h3 {
+    margin-bottom: 45px;
+}
+
+#section-location h5 {
+    color: black;
+}
+
+#section-location a {
+    margin-top: 20px;
+}
+
+#section-location p:first-child {
+    margin-top: 45px;
+    margin-bottom: 0px;
+}
+
+#section-location__hours {
+    padding: 20px;
+    background-color: #efeeee;
+}
+
+#section-location__hours tr:first-child {
+    border-top-color: #efeeee;
+}
+
+#section-location__map {
+    background-image: url('images/map-mockup.jpg');
+    background-position: center center;
+    background-size: cover;
+    height: 405px;
+}
+
+#contact-logo {
+    font-family: 'Raleway', sans-serif;
+    font-size: 36px;
+    line-height: 100%;
+    margin-bottom: 20px;
+}
+
+#contact-logo a {
+    display: block;
+}
+
+#contact-logo img {
+    display: block;
+    max-width: 100%;
+    margin: 3px auto;
+}
+
+#contact-logo a.standard-logo { display: block; }
+
+#contact-logo a.retina-logo { display: none; }
