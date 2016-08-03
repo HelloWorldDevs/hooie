@@ -399,3 +399,33 @@
 #contact-logo a.standard-logo { display: block; }
 
 #contact-logo a.retina-logo { display: none; }
+
+/*Specials*/
+
+#section-specials__header {
+    height: 400px;
+    background-image: url('images/specials-photo.jpg');
+    background-size: cover;
+    background-position: center center;
+    top: -25px;
+    position: relative;
+}
+
+#section-specials__header h1 {
+    font-size: 55px;
+    text-transform: uppercase;
+    padding-top: 85px;
+    margin-bottom: 0px;
+
+}
+
+#section-specials__header h2 {
+    text-transform: capitalize;
+    font-weight: 400;
+    margin-top: 0px;
+}
+
+#section-specials__header h1,
+#section-specials__header h2 {
+    color: white;
+}
