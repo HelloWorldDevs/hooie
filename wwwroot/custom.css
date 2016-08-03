@@ -284,6 +284,10 @@ section {
     left: 0px;
 }
 
+#carousel-smile-gallery img {
+    width: 100%;
+}
+
 /*Contact*/
 
 #section-location h1,h2,h3,h5 {
