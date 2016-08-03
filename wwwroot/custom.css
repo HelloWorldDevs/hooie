@@ -5,6 +5,10 @@
 
 /*Buttons*/
 
+.btn {
+    padding: 15px 30px;
+}
+
 .btn-block {
     display: inline;
 }
@@ -32,7 +36,7 @@
 
 .dark {
     margin-top: 0px;
-    background-color: #50669a !important;
+    background-color: #3B5998 !important;
     text-align: center;
 }
 
@@ -40,6 +44,7 @@
 
 #section-phone {
     margin-bottom: 0px;
+    padding: 20px 0px;
 }
 
 .section-phone__left {
@@ -112,19 +117,19 @@
 }
 
 #primary-menu ul li>a {
-    padding-top: 34px !important;
-    padding-bottom: 34px !important;
+    padding-top: 40px !important;
+    padding-bottom: 35px !important;
 }
 #primary-menu ul li:nth-child(1)>a {
     color: #f55433;
 }
 
 #primary-menu ul li:nth-child(2)>a {
-    color: #830000;
+    color: #a52a2a;
 }
 
 #primary-menu ul li:nth-child(3)>a {
-    color: blue;
+    color: #3B5998;
 }
 
 /*Misc*/
@@ -136,7 +141,7 @@
 
 .big-quote {
     font-size: 200%;
-    color: #f55433;
+    color: #a52a2a;
 }
 
 .glyphicon-star {
@@ -241,19 +246,19 @@ section {
     margin-bottom: 50px;
 }
 .heading-block h2 {
-    color: blue;
+    color: #3B5998;
 }
 
 /*Services*/
 
 #section-services a {
-    color: Red;
+    color: #a52a2a;
     text-decoration: underline !important;
     text-align: right;
 }
 
 #section-services__footer {
-    background-color: #50669a;
+    background-color: #3B5998;
 }
 
 #section-services__footer h4 {
@@ -299,7 +304,7 @@ section {
 }
 
 #section-location h1,h2,h3 {
-    color: red;
+    color: #a52a2a;
 }
 
 #section-location h3 {
