@@ -111,19 +111,19 @@ dl, dt, dd, ol, ul, li {
 }
 
 ::selection {
-	background: #1ABC9C;
+	background: grey;
 	color: #FFF;
 	text-shadow: none;
 }
 
 ::-moz-selection {
-	background: #1ABC9C; /* Firefox */
+	background: grey; /* Firefox */
 	color: #FFF;
 	text-shadow: none;
 }
 
 ::-webkit-selection {
-	background: #1ABC9C; /* Safari */
+	background: grey; /* Safari */
 	color: #FFF;
 	text-shadow: none;
 }
@@ -9798,7 +9798,7 @@ body:not(.device-touch) .clients-grid li a {
 	width: 6px !important;
 	height: 6px !important;
 	border: none;
-	background-color: #1ABC9C;
+	background-color: #424343;
 	opacity: 0.5;
 }
 

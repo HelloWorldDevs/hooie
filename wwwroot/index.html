@@ -48,7 +48,7 @@
 							<div class="container clearfix">
 								<div class="slider-caption slider-caption-center">
 									<h2 data-caption-animate="fadeInUp">Family Dentistry That Keeps You Smiling</h2>
-									<a href="#" class="btn btn-danger btn-block btn-lg">New Patient Specials</a>
+									<a href="#section-specials" class="btn btn-danger btn-block btn-lg">New Patient Specials</a>
 									<img id="down-arrow" src="images/down-arrow-white.svg" alt="down arrow">
 								</div>
 							</div>
@@ -58,7 +58,7 @@
 								<div class="slider-caption slider-caption-center">
 									<h2 data-caption-animate="fadeInUp">No Insurance?</h2>
 									<h2 data-caption-animate="fadeInUp">Start Saving Today!</h2>
-									<a href="#" class="btn btn-danger btn-block btn-lg">Join Our Membership Club</a>
+									<a href="#section-insurance" class="btn btn-danger btn-block btn-lg">Join Our Membership Club</a>
 								</div>
 							</div>
 						</div>
@@ -73,7 +73,7 @@
 										<span class="glyphicon glyphicon-star nocolor"></span>
 									</h2>
 									<h2 data-caption-animate="fadeInUp">"Have always had excellent service. The staff is fantastic." <span class="quoter nocolor">-Judy</span></h2>
-									<a href="#" class="btn btn-danger btn-block btn-lg">Read Our Patient Reviews</a>
+									<a href="#section-reviews" class="btn btn-danger btn-block btn-lg">Read Our Patient Reviews</a>
 								</div>
 							</div>
 						</div>
@@ -157,7 +157,7 @@
 
 				<section id="section-team" class="page-section">
 
-					<div class="heading-block center">
+					<div class="heading center">
 						<h2>Meet The Team</h2>
 					</div>
 
@@ -169,10 +169,10 @@
 								</div>
 
 								<div id="section-team__hooie-bio" class="col-sm-6">
-									<h4>Donald G. Hooie, DDS</h4>
-									<p>“Since childhood, I have always wanted to help others and contribute to their improved health. I love the big smile when a patient sees their completed treatment for the first time. I want the best care for every patient and expect to give every patient comfortable treatment and the best-looking smile that functions well.
-										“I am thorough and determined to complete each patient’s dental treatment comfortably and correctly. My goal is to preserve your natural teeth or replace them with proper esthetics and function.”
-										In his free time, Dr. Hooie holds multiple positions at First United Methodist Church, including playing the bass with the Praise Band, Boy Scouts of America and Crossville Lions Club (past president). He enjoys canoeing, kayaking, climbing/rappelling and family time. Residency: General Practice, Portsmouth Naval Hospital, US Navy DDS: University of Tennessee College of Dentistry, with Honors BS: Chemistry/Physics/Biology, Middle Tennessee State University Dental Officer: US Navy, 1987 to 1993, Lieutenant Commander Licensed: State of Tennessee Member: American Dental Association, Tennessee Dental Association, Crossville Dental Society, Association of Military Surgeons of the US Certified: Laser Dentistry, Adult Orthodontics-Qualified Continuing Education: Over 8,000 hours including teeth whitening, dentures, restorations for implants, dental crowns, dental bridges, tooth-colored fillings, nonsurgical gum care, single-visit root canal therapy, laser dentistry, adult orthodontics and endodontics Past President: Crossville Lions Club, Melvin Jones Fellow Leader: Boy Scouts of America, Eagle Scout, Former Scout Master, Former Cub Master, Former District Chairman, Silver Beaver Recipient, Trainer, OA Vigil Honor Recipient Volunteer Dentist: Remote Area Medical; Navajo Indian Reservation; Kuna Indian Reservation, Panama Guest Speaker: Topics on oral health for local groups, schools and statewide organizations.</p>
+									<h3>Donald G. Hooie, DDS</h3>
+									<!--<p>“Since childhood, I have always wanted to help others and contribute to their improved health. I love the big smile when a patient sees their completed treatment for the first time. I want the best care for every patient and expect to give every patient comfortable treatment and the best-looking smile that functions well.</p>-->
+									<p>In his free time, Dr. Hooie holds multiple positions at First United Methodist Church, including playing the bass with the Praise Band, Boy Scouts of America and Crossville Lions Club (past president). He enjoys canoeing, kayaking, climbing/rappelling and family time.</p>
+									<p>Residency: General Practice, Portsmouth Naval Hospital, US Navy DDS: University of Tennessee College of Dentistry, with Honors BS: Chemistry/Physics/Biology, Middle Tennessee State University Dental Officer: US Navy, 1987 to 1993, Lieutenant Commander Licensed: State of Tennessee Member: American Dental Association, Tennessee Dental Association, Crossville Dental Society, Association of Military Surgeons of the US Certified: Laser Dentistry, Adult Orthodontics-Qualified.</p>
 								</div>
 							</div>
 
@@ -229,7 +229,7 @@
 
 					<div class="clearfix">
 
-						<div class="heading-block center">
+						<div class="heading center">
 							<h2>Limited Time Summer Specials</h2>
 							<h4>Offer ends September 20, 2016</h4>
 						</div>
@@ -285,13 +285,27 @@
 									<div class="col-md-4">
 										<h1><span class="big-quote nocolor">"</span> I love coming here.</h1>
 										<h5>-Irene H.</h5>
-										<a href="#" class="btn btn-danger btn-block btn-lg">Watch The Video <span class="glyphicon glyphicon-film" aria-hidden="true"></span></a>
+										<a href="#" class="btn btn-danger btn-block btn-lg" data-toggle="modal" data-target="#modal-video">Watch The Video <span class="glyphicon glyphicon-film" aria-hidden="true"></span></a>
 									</div>
 								</div>
 							</div>
 						</div>
 
-						<div class="heading-block center">
+						<!--Video modal	-->
+						<div class="modal fade" id="modal-video" tabindex="-1" role="dialog">
+							<div class="modal-dialog" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+									</div>
+									<div class="modal-body">
+										<img src="images/video-placeholder.jpg" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="heading center">
 							<h2>Patient Reviews</h2>
 						</div>
 
@@ -454,12 +468,58 @@
 
 				<section id="section-services" class="page-section">
 
-					<div class="heading-block center">
+					<div class="heading center">
 						<h2>Our Services</h2>
 					</div>
 
 					<div class="row">
-						<div class="col-md-4 section-services__service-tile">
+						<div class="col-xs-6 col-md-4 section-services__service-tile">
+							<img src="images/services/smile-makeovers.jpg" alt="">
+							<div class="section-services__service-tile__container">
+								<h1>Smile Restoration</h1>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor id perspiciatis unde.</p>
+								<a href="#" data-toggle="modal" data-target="#modal-service-1">Read More</a>
+							</div>
+							<!--Service Modal 1-->
+							<div class="modal fade" id="modal-service-1" tabindex="-1" role="dialog">
+								<div class="modal-dialog" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+										</div>
+										<div class="modal-body center">
+											<h3>Smile Restoration</h3>
+											<p>We'll bring back that smile! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet earum, eius explicabo ipsa obcaecati perspiciatis quam totam.</p>
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet earum, eius explicabo ipsa obcaecati perspiciatis quam totam.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-6 col-md-4 section-services__service-tile">
+							<img src="images/services/smile-makeovers.jpg" alt="">
+							<div class="section-services__service-tile__container">
+								<h1>Teeth Cleaning</h1>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor id perspiciatis unde.</p>
+								<a href="#" data-toggle="modal" data-target="#modal-service-2">Read More</a>
+							</div>
+							<!--Service Modal 2-->
+							<div class="modal fade" id="modal-service-2" tabindex="-1" role="dialog">
+								<div class="modal-dialog" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+										</div>
+										<div class="modal-body center">
+											<h3>Teeth Cleaning</h3>
+											<p>Teeth cleaning by professionals. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet earum, eius explicabo ipsa obcaecati perspiciatis quam totam.</p>
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet earum, eius explicabo ipsa obcaecati perspiciatis quam totam.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-6 col-md-4 section-services__service-tile">
 							<img src="images/services/smile-makeovers.jpg" alt="">
 							<div class="section-services__service-tile__container">
 								<h1>Smile Makeovers</h1>
@@ -467,7 +527,7 @@
 								<a href="#">Read More</a>
 							</div>
 						</div>
-						<div class="col-md-4 section-services__service-tile">
+						<div class="col-xs-6 col-md-4 section-services__service-tile">
 							<img src="images/services/smile-makeovers.jpg" alt="">
 							<div class="section-services__service-tile__container">
 								<h1>Smile Makeovers</h1>
@@ -475,7 +535,7 @@
 								<a href="#">Read More</a>
 							</div>
 						</div>
-						<div class="col-md-4 section-services__service-tile">
+						<div class="col-xs-6 col-md-4 section-services__service-tile">
 							<img src="images/services/smile-makeovers.jpg" alt="">
 							<div class="section-services__service-tile__container">
 								<h1>Smile Makeovers</h1>
@@ -483,25 +543,7 @@
 								<a href="#">Read More</a>
 							</div>
 						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-4 section-services__service-tile">
-							<img src="images/services/smile-makeovers.jpg" alt="">
-							<div class="section-services__service-tile__container">
-								<h1>Smile Makeovers</h1>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor id perspiciatis unde.</p>
-								<a href="#">Read More</a>
-							</div>
-						</div>
-						<div class="col-md-4 section-services__service-tile">
-							<img src="images/services/smile-makeovers.jpg" alt="">
-							<div class="section-services__service-tile__container">
-								<h1>Smile Makeovers</h1>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor id perspiciatis unde.</p>
-								<a href="#">Read More</a>
-							</div>
-						</div>
-						<div class="col-md-4 section-services__service-tile">
+						<div class="col-xs-6 col-md-4 section-services__service-tile">
 							<img src="images/services/smile-makeovers.jpg" alt="">
 							<div class="section-services__service-tile__container">
 								<h1>Smile Makeovers</h1>
@@ -520,7 +562,7 @@
 
 				<section id="section-gallery" class="">
 					
-					<div class="heading-block center">
+					<div class="heading center">
 						<h1>Smile Gallery</h1>
 					</div>
 
@@ -532,9 +574,54 @@
 							<p>View a gallery of amazing smile transformations.</p>
 							<p>Whether you need a full-mouth restoration or a quick smile-whitening we can help you to
 								achieve the smile you've always dreamed of having.</p>
-							<a href="#" class="btn btn-danger btn-block btn-lg">View Gallery <span class="glyphicon glyphicon-play"></span></a>
+							<a href="#" class="btn btn-danger btn-block btn-lg" data-toggle="modal" data-target="#smile-gallery">View Gallery <span class="glyphicon glyphicon-play"></span></a>
 						</div>
 					</div>
+
+					<!--Smile gallery modal-->
+					<div class="modal fade" id="smile-gallery" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+								</div>
+								<div class="modal-body">
+									<div id="carousel-smile-gallery" class="carousel slide">
+										<!-- Indicators -->
+										<ol class="carousel-indicators">
+											<li data-target="#carousel-smile-gallery" data-slide-to="0" class="active"></li>
+											<li data-target="#carousel-smile-gallery" data-slide-to="1"></li>
+											<li data-target="#carousel-smile-gallery" data-slide-to="2"></li>
+										</ol>
+
+										<!-- Wrapper for slides -->
+										<div class="carousel-inner" role="listbox">
+											<div class="item active">
+												<img src="images/smile-gallery/dentures.jpg" alt="">
+											</div>
+											<div class="item">
+												<img src="images/smile-gallery.jpg" alt="">
+											</div>
+											<div class="item">
+												<img src="images/smile-gallery/dentures.jpg" alt="">
+											</div>
+										</div>
+
+										<!-- Controls -->
+										<a class="left carousel-control" href="#carousel-smile-gallery" role="button" data-slide="prev">
+											<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+											<span class="sr-only">Previous</span>
+										</a>
+										<a class="right carousel-control" href="#carousel-smile-gallery" role="button" data-slide="next">
+											<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+											<span class="sr-only">Next</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
 				</section>
 
 				<section id="section-location" class="page-section">
@@ -589,6 +676,8 @@
 						</div>
 					</div>
 				</section>
+
+
 			</div>
 
 		</section><!-- #content end -->
