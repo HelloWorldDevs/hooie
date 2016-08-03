@@ -282,41 +282,41 @@ section {
 
 /*Contact*/
 
-#section-contact h1,h2,h3,h5 {
+#section-location h1,h2,h3,h5 {
     margin: 0px;
 }
 
-#section-contact h1,h2,h3 {
+#section-location h1,h2,h3 {
     color: red;
 }
 
-#section-contact h3 {
+#section-location h3 {
     margin-bottom: 45px;
 }
 
-#section-contact h5 {
+#section-location h5 {
     color: black;
 }
 
-#section-contact a {
+#section-location a {
     margin-top: 20px;
 }
 
-#section-contact p:first-child {
+#section-location p:first-child {
     margin-top: 45px;
     margin-bottom: 0px;
 }
 
-#section-contact__hours {
+#section-location__hours {
     padding: 20px;
     background-color: #efeeee;
 }
 
-#section-contact__hours tr:first-child {
+#section-location__hours tr:first-child {
     border-top-color: #efeeee;
 }
 
-#section-contact__map {
+#section-location__map {
     background-image: url('images/map-mockup.jpg');
     background-position: center center;
     background-size: cover;
