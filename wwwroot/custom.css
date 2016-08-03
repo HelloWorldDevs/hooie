@@ -280,6 +280,10 @@ section {
     margin-bottom: 0px;
 }
 
+.modal-dialog {
+    left: 0px;
+}
+
 /*Contact*/
 
 #section-location h1,h2,h3,h5 {
