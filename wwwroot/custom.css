@@ -288,6 +288,10 @@ section {
     width: 100%;
 }
 
+#modal-video img {
+    width: 100%;
+}
+
 /*Contact*/
 
 #section-location h1,h2,h3,h5 {
