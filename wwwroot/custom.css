@@ -3,6 +3,9 @@
     --primary-blue: #102455;
 }
 
+p {
+    font-family: 'Crimson Text';
+}
 /*Buttons*/
 
 .btn {
