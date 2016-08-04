@@ -7,7 +7,7 @@
 
 	<!-- Stylesheets
 	============================================= -->
-	<link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
+	<link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic|Crimson+Text:700italic" rel="stylesheet" type="text/css" />
 	<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
 	<link rel="stylesheet" href="style.css" type="text/css" />
@@ -48,8 +48,14 @@
 							<div class="container clearfix">
 								<div class="slider-caption slider-caption-center">
 									<h2 data-caption-animate="fadeInUp">Family Dentistry That Keeps You Smiling</h2>
-									<a href="#section-specials" class="btn btn-danger btn-block btn-lg">New Patient Specials</a>
-									<img id="down-arrow" src="images/down-arrow-white.svg" alt="down arrow">
+									<div class="smooth-scroll-btn"  data-easing="easeInOutExpo" data-speed="1500">
+										<a href="#" data-href="#section-specials" class="btn btn-danger btn-block btn-lg">New Patient Specials</a>
+									</div>
+									<div class="smooth-scroll-btn" data-easing="easeInOutExpo" data-speed="1500">
+										<a href="#" data-href="#section-phone">
+											<img id="down-arrow" src="images/down-arrow-white.svg" alt="down arrow">
+										</a>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -140,7 +146,7 @@
 						<div class="row">
 							<div class="section-phone__left col-xs-6">
 								<h5>New Patient Hotline</h5>
-								<h2>(888) 335-3249</h2>
+								<h2 class="phone-number">(888) 335-3249</h2>
 							</div>
 							<div class="section-phone__right col-xs-6">
 								<a href="#" class="btn btn-danger btn-block btn-lg">Request Appointment</a>
@@ -170,9 +176,9 @@
 
 								<div id="section-team__hooie-bio" class="col-sm-6">
 									<h3>Donald G. Hooie, DDS</h3>
-									<!--<p>“Since childhood, I have always wanted to help others and contribute to their improved health. I love the big smile when a patient sees their completed treatment for the first time. I want the best care for every patient and expect to give every patient comfortable treatment and the best-looking smile that functions well.</p>-->
-									<p>In his free time, Dr. Hooie holds multiple positions at First United Methodist Church, including playing the bass with the Praise Band, Boy Scouts of America and Crossville Lions Club (past president). He enjoys canoeing, kayaking, climbing/rappelling and family time.</p>
-									<p>Residency: General Practice, Portsmouth Naval Hospital, US Navy DDS: University of Tennessee College of Dentistry, with Honors BS: Chemistry/Physics/Biology, Middle Tennessee State University Dental Officer: US Navy, 1987 to 1993, Lieutenant Commander Licensed: State of Tennessee Member: American Dental Association, Tennessee Dental Association, Crossville Dental Society, Association of Military Surgeons of the US Certified: Laser Dentistry, Adult Orthodontics-Qualified.</p>
+									<p>Dr. Hooie graduated with honors from the University of Tennessee College of Dentistry. Each year, Dr. Hooie continues his education with some of the most well-known clinicians in the country focusing on teeth-whitening, dentures, implants, crowns, dental bridges, tooth-colored fillings, non-surgical gum care, single-visit root canal therapy, laser dentistry, and adult orthodontics.</p>
+									<p>Dr. Hooie's memberships include the American Dental Association, the Tennessee Dental Association, the Crossville Dental Society, adn the Association of Military Surgeons. He is heighly-involved in helping those without access to qulity dental and is a volunteer dentist at Remote Area Medical, the Navajo Indian Reservation, the Kuna Indian Reservation, and in Panama.</p>
+									<p>When not in the offic, Dr. Hooie holds multiple positions at First united Methodist Church, including playin the bas with the praise band, Boy Scouts, and Crossville Lions Club, where he is a past president. He enjoys canoeing, kayaking, climbing/rappelling, and family time.</p>
 								</div>
 							</div>
 
@@ -184,7 +190,7 @@
 												<div>
 													<img src="images/team/allie-hutson.jpg" alt="">
 													<h3>Allie Hutson</h3>
-													<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid beatae ducimus error excepturi molestias nemo nostrum possimus quia. Adipisci architecto aspernatur cumque est exercitationem obcaecati possimus quis rerum tempore ut!</p>
+													<p>Born in Arlington Virginia raised in Fredericksburg Virginia. Enjoys anything health and fitness related including hiking in the Tennessee mountains. Four uears of excellent customer service and certificate in medical and dental office assisting. Mother of 2, wife of an Army veteran.</p>
 												</div>
 											</div>
 											<div class="slide">
@@ -232,28 +238,34 @@
 						<div id="section-specials__header">
 							<div class="heading center">
 								<h1>Limited Time Summer Specials</h1>
-								<h2>Offer ends September 20, 2016</h2>
+								<h2>Offer ends by September 20, 2016</h2>
 							</div>
 						</div>
 
 						<div class="row">
 							<div class="col-md-4">
-								<img src="" alt="">
-								<h3>New Patient Dental Exam</h3>
-								<h5>Save 1170</h5>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+								<h1 class="specials-token"><span class="small-token nocolor">$</span>65</h1>
+								<h3>New Patient</h3>
+								<h3>Dental Exam</h3>
+								<h5>Save $170</h5>
+								<p>Includes comprehensive exam by the doctor and necessary x-rays.</p>
+								<p>(D0150, D0210)</p>
 							</div>
 							<div class="col-md-4">
-								<img src="" alt="">
-								<h3>New Patient Dental Exam</h3>
-								<h5>Save 2170</h5>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+								<h1 class="specials-token"><span class="small-token nocolor">$</span>45</h1>
+								<h3>New Patient</h3>
+								<h3>Dental Cleaning</h3>
+								<h5>Save $145</h5>
+								<p>Includes a professional dental cleaning. A new patient exam is required. Does not include periodontal therapy.</p>
+								<p>(D1110)</p>
 							</div>
 							<div class="col-md-4">
-								<img src="" alt="">
-								<h3>New Patient Dental Exam</h3>
-								<h5>Save 3170</h5>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+								<h1 class="specials-token"><span class="small-token nocolor">$</span>99</h1>
+								<h3>New Children's</h3>
+								<h3>Cleaning & Exam</h3>
+								<h5>Save $136</h5>
+								<p>Patients 12 and under recieve a professional dental cleaning, fluoride treatment, needed x-rays, and a comprehensive exam.</p>
+								<P>(D1120, D1208, D0274, D0150)</P>
 							</div>
 						</div>
 
@@ -267,7 +279,7 @@
 						<div class="row">
 							<div class="section-phone__left col-xs-6">
 								<h5>New Patient Hotline</h5>
-								<h2>(888) 335-3249</h2>
+								<h2 class="phone-number">(888) 335-3249</h2>
 							</div>
 							<div class="section-phone__right col-xs-6">
 								<a href="#" class="btn btn-danger btn-block btn-lg">Request Appointment</a>
@@ -282,12 +294,12 @@
 					<div class="clearfix">
 
 						<div id="section-reviews__header">
-							<div class="container">
+							<div >
 								<div class="row">
 									<div class="col-md-4">
 										<h1><span class="big-quote nocolor">"</span> I love coming here.</h1>
-										<h5>-Irene H.</h5>
-										<a href="#" class="btn btn-danger btn-block btn-lg" data-toggle="modal" data-target="#modal-video">Watch The Video <span class="glyphicon glyphicon-film" aria-hidden="true"></span></a>
+										<h3>-Irene H.</h3>
+										<a href="#" class="btn btn-danger btn-block btn-lg btn-inverted" data-toggle="modal" data-target="#modal-video">Watch The Video <span class="glyphicon glyphicon-film" aria-hidden="true"></span></a>
 									</div>
 								</div>
 							</div>
@@ -452,11 +464,11 @@
 				<section id="section-insurance" class="page-section">
 
 					<div class="row">
-						<div class="col-md-5 col-md-offset-6">
+						<div class="col-md-4 col-md-offset-6">
 							<div class="center">
 								<h1>No Insurance?</h1>
 								<h4>Join the Hooie Dental Membership Club and Start Saving Today!</h4>
-								<h4>Adult Programs start at 027/mo.</h4>
+								<h4>Adult Programs start at $27/mo.</h4>
 								<h5>Easy Monthly Payments with Plans for All Family Members</h5>
 								<h5>No Exclusions for Cosmetic or Elective Care</h5>
 								<h5>No Yearly Maximum Benefits, and No Deductibles!</h5>
@@ -576,7 +588,7 @@
 							<p>View a gallery of amazing smile transformations.</p>
 							<p>Whether you need a full-mouth restoration or a quick smile-whitening we can help you to
 								achieve the smile you've always dreamed of having.</p>
-							<a href="#" class="btn btn-danger btn-block btn-lg" data-toggle="modal" data-target="#smile-gallery">View Gallery <span class="glyphicon glyphicon-play"></span></a>
+							<a href="#" class="btn btn-danger btn-block btn-lg btn-inverted" data-toggle="modal" data-target="#smile-gallery">View Gallery <span class="glyphicon glyphicon-play"></span></a>
 						</div>
 					</div>
 
@@ -636,9 +648,9 @@
 
 							<div class="center">
 								<h5>New Patient Hotline</h5>
-								<h1>(888) 335-3248</h1>
-								<h5>Existing patients call</h5>
-								<h3>(931) 456-1950</h3>
+								<h1 class="phone-number">(888) 335-3248</h1>
+								<h4>Existing patients call</h4>
+								<h3 class="phone-number">(931) 456-1950</h3>
 								<a href="#" class="btn btn-danger btn-block btn-lg">Request Appointment</a>
 							</div>
 						</div>
