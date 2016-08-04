@@ -414,6 +414,12 @@ p {
     padding-top: 30px;
     padding-bottom: 70px;
 }
+
+#section-gallery p {
+    font-size: 20px;
+    line-height: 1.2;
+}
+
 #section-gallery p:first-child {
     margin-top: 60px;
     margin-bottom: 0px;
@@ -607,4 +613,12 @@ p {
 }
 .small-token {
     font-size: 40px;
+}
+
+/*Fixes to bugs from Responsive.css*/
+@media (max-width: 767px) {
+    .slider-caption h2 {
+        margin-bottom: 10px !important;
+    }
+
 }
