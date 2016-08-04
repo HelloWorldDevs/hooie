@@ -355,13 +355,23 @@
 }
 
 .section-services__service-tile a {
+    font-size: 16px;
     float: right;
 }
 
-.section-services__service-tile__container {
-    padding: 0px 10px;
+.section-services__service-tile h1 {
+    margin-top: 20px;
+    color: #3B5998;
 }
 
+.section-services__service-tile__container {
+    padding: 0px 10% 10px 5%;
+}
+
+.section-services__service-tile__container p {
+    color: #666666;
+    margin-bottom: 0px;
+}
 /*Gallery*/
 
 #section-gallery {
