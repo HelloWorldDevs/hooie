@@ -431,6 +431,14 @@ p {
     width: 100%;
 }
 
+@media screen and (max-width: 992px) {
+    #section-gallery .row {
+        text-align: center;
+        padding: 0px 15%;
+    }
+}
+
+
 /*Contact*/
 
 #section-location {
@@ -506,6 +514,17 @@ p {
 #contact-logo a.standard-logo { display: block; }
 
 #contact-logo a.retina-logo { display: none; }
+
+@media screen and (max-width: 992px) {
+
+    #section-location__map {
+        margin-top: 30px;
+    }
+
+    #section-location__hours {
+        margin: 0px 20px;
+    }
+}
 
 /*Specials*/
 
