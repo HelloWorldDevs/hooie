@@ -6,7 +6,9 @@
 /*Buttons*/
 
 .btn {
-    padding: 15px 30px;
+    padding: 12px 30px;
+    font-weight: 200;
+    font-size: 16px;
 }
 
 .btn-block {
@@ -19,6 +21,33 @@
     text-transform: uppercase;
 }
 
+.btn-inverted {
+    background-color: #f5f5f5;
+    border-color: #f55433;
+    color: #f55433;
+}
+
+#slider {
+    line-height: 1.0;
+}
+
+#slider .btn-inverted {
+    border-radius: 0px;
+}
+
+#slider a {
+    font-weight: ;
+}
+
+#slider h2 {
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+#slider h3 {
+    font-size: 50px;
+    font-weight: 900;
+}
 .content-wrap {
     padding-top: 0px;
 }
@@ -28,7 +57,6 @@
     display: block;
     margin: 35px auto;
 }
-
 
 .slider-caption h2 {
     text-transform: none;
@@ -40,11 +68,26 @@
     text-align: center;
 }
 
+
 /*Phone*/
 
 #section-phone {
     margin-bottom: 0px;
     padding: 20px 0px;
+}
+
+#section-phone h2,
+#section-phone-2 h2 {
+    line-height: 1.0;
+    font-weight: 400;
+}
+
+#section-phone>div>div:last-child {
+    margin-top: 20px;
+}
+
+.phone-number {
+    font-family: 'Lato';
 }
 
 .section-phone__left {
@@ -54,6 +97,10 @@
 .section-phone__left h5,
 .section-phone__left h2 {
     margin-bottom: 0px;
+}
+
+.section-phone__left h5 {
+    font-weight: 200;
 }
 
 .section-phone__left h2 {
@@ -67,6 +114,10 @@
 
 .section-phone__right a {
     margin: 10px 16px;
+}
+
+#section-phone-2 {
+    padding: 30px;
 }
 
 /*Team*/
@@ -188,7 +239,8 @@
 }
 
 #section-reviews__header {
-    height: 350px;
+    margin-top: -20px;
+    height: 420px;
     background-image: url('images/irene-clip.jpg');
     background-size: cover;
     background-position: center center;
@@ -203,13 +255,23 @@
 }
 
 #section-reviews__header h1,
-#section-reviews__header h5 {
+#section-reviews__header h3 {
     color: black;
+    font-family: 'Crimson Text';
+
 }
 
-#section-reviews__header h5 {
-    color: black;
+#section-reviews__header h1 {
+    font-size: 50px;
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+
+#section-reviews__header h3 {
     text-align: right;
+    font-size: 30px;
+    color: #323232;
+    font-weight: 100;
 }
 
 #section-reviews__table p {
@@ -254,8 +316,17 @@
     color: white;
 }
 
+#section-insurance h1 {
+    text-transform: uppercase;
+    font-size: 45px;
+}
+
+#section-insurance h4:nth-child(3) {
+    text-transform: uppercase;
+}
+
 #section-insurance h5 {
-    margin-bottom: 5px;
+    margin-bottom: 7px;
 }
 
 #section-insurance h5:nth-last-child(2) {
@@ -305,17 +376,33 @@
 }
 
 .section-services__service-tile a {
+    font-size: 16px;
     float: right;
 }
 
-.section-services__service-tile__container {
-    padding: 0px 10px;
+.section-services__service-tile h1 {
+    margin-top: 20px;
+    color: #3B5998;
 }
 
+.section-services__service-tile__container {
+    padding: 0px 10% 10px 5%;
+}
+
+.section-services__service-tile__container p {
+    color: #666666;
+    margin-bottom: 0px;
+}
 /*Gallery*/
 
+#section-gallery {
+    margin-top: -30px;
+    background-color: #f4f4f4;
+    padding-top: 30px;
+    padding-bottom: 70px;
+}
 #section-gallery p:first-child {
-    margin-top: 20px;
+    margin-top: 60px;
     margin-bottom: 0px;
 }
 
@@ -333,11 +420,18 @@
 
 /*Contact*/
 
+#section-location {
+    padding-top: 40px;
+    padding-bottom: 0px;
+}
+
 #section-location h1,
 #section-location h2,
 #section-location h3,
+#section-location h4,
 #section-location h5 {
     margin: 0px;
+    color: black;
 }
 
 #section-location h1,
@@ -399,3 +493,86 @@
 #contact-logo a.standard-logo { display: block; }
 
 #contact-logo a.retina-logo { display: none; }
+
+/*Specials*/
+
+#section-specials__header {
+    height: 400px;
+    background-image: url('images/specials-photo.jpg');
+    background-size: cover;
+    background-position: center center;
+    top: -25px;
+    position: relative;
+}
+
+#section-specials__header h1 {
+    letter-spacing: -1px;
+    font-size: 60px;
+    text-transform: uppercase;
+    padding-top: 85px;
+    margin-bottom: 0px;
+
+}
+
+#section-specials__header h2 {
+    text-transform: none;
+    font-weight: 500;
+    margin-top: 0px;
+}
+
+#section-specials__header h1,
+#section-specials__header h2 {
+    color: white;
+}
+
+#section-specials .row {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+#section-specials .row>div {
+    padding: 0px 5%;
+}
+
+
+#section-specials .row h1 {
+    border-radius: 100%;
+    background: white;
+    position: relative;
+    top: -80px;
+    display: inline;
+    padding: 10px;
+    font-size: 70px;
+    font-weight: 900;
+}
+
+#section-specials .row h3 {
+    font-weight: 600;
+    font-size: 35px;
+    margin-bottom: 5px;
+    line-height: 1.0;
+}
+
+#section-specials .row h5 {
+    margin-top: 15px;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 100;
+    color: #3B5998;
+    margin-bottom: 40px;
+}
+
+#section-specials .row h1,
+#section-specials .row h3,
+#section-specials .row h5 {
+    color: #3B5998;
+}
+
+#section-specials .row p {
+    color: grey;
+    margin-bottom: 0px;
+}
+.small-token {
+    font-size: 40px;
+}
