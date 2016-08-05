@@ -49,12 +49,12 @@
 						<div class="swiper-slide dark" style="background-image: url('images/slides/slide1.jpg');">
 							<div class="container clearfix">
 								<div class="slider-caption slider-caption-center">
-									<h2 data-caption-animate="fadeInUp">Now Welcoming</h2>
-									<h2 data-caption-animate="fadeInUp">New Patients</h2>
+									<h2 data-caption-animate="fadeInUp" class="mobile-hide">Now Welcoming</h2>
+									<h2 data-caption-animate="fadeInUp" class="mobile-hide">New Patients</h2>
 									<div data-caption-animate="fadeInUp" class="smooth-scroll-btn"  data-easing="easeInOutExpo" data-speed="1500">
 										<a href="" data-href="#section-specials" class="btn btn-danger btn-block btn-lg btn-inverted">New Patient Specials</a>
 									</div>
-									<div data-caption-animate="fadeInUp" class="smooth-scroll-btn" data-easing="easeInOutExpo" data-speed="1500">
+									<div data-caption-animate="fadeInUp" class="smooth-scroll-btn mobile-hide" data-easing="easeInOutExpo" data-speed="1500">
 										<a href="" data-href="#section-phone">
 											<img id="down-arrow" src="images/down-arrow-white.svg" alt="down arrow">
 										</a>
@@ -65,15 +65,15 @@
 						<div class="swiper-slide dark" style="background-image: url('images/slides/slide2.jpg');">
 							<div class="container clearfix">
 								<div class="slider-caption slider-caption-center">
-									<h2 data-caption-animate="fadeInUp" style="margin-bottom: 0px">No Insurance?</h2>
-									<h2 data-caption-animate="fadeInUp">Start Saving Today!</h2>
+									<h2 data-caption-animate="fadeInUp" class="mobile-hide">No Insurance?</h2>
+									<h2 data-caption-animate="fadeInUp" class="mobile-hide">Start Saving Today!</h2>
 									<div data-caption-animate="fadeInUp" class="smooth-scroll-btn" data-easing="easeInOutExpo"
 											 data-speed="1500">
 
 											<a data-href="#section-insurance" href="" class="btn btn-danger btn-block btn-lg btn-inverted">Join Our Membership Club</a>
 
 										</div>
-									<div data-caption-animate="fadeInUp" class="smooth-scroll-btn" data-easing="easeInOutExpo"
+									<div data-caption-animate="fadeInUp" class="smooth-scroll-btn mobile-hide" data-easing="easeInOutExpo"
 											 data-speed="1500">
 										<a href="" data-href="#section-phone">
 											<img id="down-arrow" src="images/down-arrow-white.svg" alt="down arrow">
@@ -92,12 +92,12 @@
 										<span class="glyphicon glyphicon-star nocolor"></span>
 										<span class="glyphicon glyphicon-star nocolor"></span>
 									</h2>
-									<h3 data-caption-animate="fadeInUp">"Have always had excellent service. The staff is fantastic." <span class="quoter nocolor">-Judy</span></h3>
+									<h3 data-caption-animate="fadeInUp" class="mobile-hide">"Have always had excellent service. The staff is fantastic." <span class="quoter nocolor">-Judy</span></h3>
 									<div data-caption-animate="fadeInUp" class="smooth-scroll-btn" data-easing="easeInOutExpo"
 											 data-speed="1500">
 										<a data-href="#section-reviews" href="" class="btn btn-danger btn-block btn-lg btn-inverted">Read Our Patient Reviews</a>
 									</div>
-									<div data-caption-animate="fadeInUp" class="smooth-scroll-btn" data-easing="easeInOutExpo"
+									<div data-caption-animate="fadeInUp" class="smooth-scroll-btn mobile-hide" data-easing="easeInOutExpo"
 											 data-speed="1500">
 										<a href="" data-href="#section-phone">
 											<img id="down-arrow" src="images/down-arrow-white.svg" alt="down arrow">
@@ -391,139 +391,66 @@
 							<img src="images/services/smile-makeovers.jpg" alt="">
 							<div class="section-services__service-tile__container">
 								<h1>Smile Restoration</h1>
-								<p>Getting a smile makeover is one of the most cost-effective ways to improve your
-									appearance.</p>
-								<a href="#" data-toggle="modal" data-target="#modal-service-smile">Read More</a>
-							</div>
-							<!--Service Modal 1-->
-							<div class="modal fade" id="modal-service-smile" tabindex="-1" role="dialog">
-								<div class="modal-dialog" role="document">
-									<div class="modal-content">
-										<div class="modal-header">
-											<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-										</div>
-										<div class="modal-body center">
-											<h3>Smile Restoration</h3>
-											<p>We'll bring back that smile! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet earum, eius explicabo ipsa obcaecati perspiciatis quam totam.</p>
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet earum, eius explicabo ipsa obcaecati perspiciatis quam totam.</p>
-										</div>
-									</div>
-								</div>
+								<p class="closed">Care by professionals. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet earum, eius
+									explicabo ipsa obcaecati perspiciatis quam totam.
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet earum, eius explicabo ipsa obcaecati
+									perspiciatis quam totam.</p>
+								<a href="#" class="read-more">Read More</a>
 							</div>
 						</div>
 						<div class="col-xs-6 col-md-4 section-services__service-tile">
 							<img src="images/services/family-care.jpg"">
 							<div class="section-services__service-tile__container">
 								<h1>Family Care</h1>
-								<p>From toddlers to the elderly, our skilled dental team is familiar with the unique needs of every patient, no matter their age.</p>
-								<a href="#" data-toggle="modal" data-target="#modal-service-family">Read More</a>
-							</div>
-							<!--Service Modal-->
-							<div class="modal fade" id="modal-service-family" tabindex="-1" role="dialog">
-								<div class="modal-dialog" role="document">
-									<div class="modal-content">
-										<div class="modal-header">
-											<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-										</div>
-										<div class="modal-body center">
-											<h3>Family Care</h3>
-											<p>Care by professionals. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet earum, eius explicabo ipsa obcaecati perspiciatis quam totam.</p>
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet earum, eius explicabo ipsa obcaecati perspiciatis quam totam.</p>
-										</div>
-									</div>
-								</div>
+								<p class="closed">Care by professionals. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet earum, eius
+									explicabo ipsa obcaecati perspiciatis quam totam.
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet earum, eius explicabo ipsa obcaecati
+									perspiciatis quam totam.</p>
+								<a href="#" class="read-more">Read More</a>
 							</div>
 						</div>
 						<div class="col-xs-6 col-md-4 section-services__service-tile">
 							<img src="images/services/restorations.jpg" alt="">
 							<div class="section-services__service-tile__container">
 								<h1>Dental Restoration</h1>
-								<p>If you have a cracked, chipped, infected, or damaged tooth, please give us a call to make an appointment.</p>
-								<a href="#" data-toggle="modal" data-target="#modal-service-restoration">Read More</a>
-							</div>
-							<!--Service Modal-->
-							<div class="modal fade" id="modal-service-restoration" tabindex="-1" role="dialog">
-								<div class="modal-dialog" role="document">
-									<div class="modal-content">
-										<div class="modal-header">
-											<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-										</div>
-										<div class="modal-body center">
-											<h3>Dental Restoration</h3>
-											<p>Care by professionals. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet earum, eius explicabo ipsa obcaecati perspiciatis quam totam.</p>
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet earum, eius explicabo ipsa obcaecati perspiciatis quam totam.</p>
-										</div>
-									</div>
-								</div>
+								<p class="closed">Care by professionals. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet earum, eius
+									explicabo ipsa obcaecati perspiciatis quam totam.
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet earum, eius explicabo ipsa obcaecati
+									perspiciatis quam totam.</p>
+								<a href="#" class="read-more">Read More</a>
 							</div>
 						</div>
 						<div class="col-xs-6 col-md-4 section-services__service-tile">
 							<img src="images/services/crowns.jpg" alt="">
 							<div class="section-services__service-tile__container">
 								<h1>Crowns & Bridges</h1>
-								<p>Protect and keep badly decayed or fractured teeth while maintaining a beautiful smile.</p>
-								<a href="#" data-toggle="modal" data-target="#modal-service-crowns">Read More</a>
-							</div>
-							<!--Service Modal-->
-							<div class="modal fade" id="modal-service-crowns" tabindex="-1" role="dialog">
-								<div class="modal-dialog" role="document">
-									<div class="modal-content">
-										<div class="modal-header">
-											<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-										</div>
-										<div class="modal-body center">
-											<h3>Crowns & Bridges</h3>
-											<p>Care by professionals. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet earum, eius explicabo ipsa obcaecati perspiciatis quam totam.</p>
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet earum, eius explicabo ipsa obcaecati perspiciatis quam totam.</p>
-										</div>
-									</div>
-								</div>
+								<p class="closed">Care by professionals. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet earum, eius
+									explicabo ipsa obcaecati perspiciatis quam totam.
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet earum, eius explicabo ipsa obcaecati
+									perspiciatis quam totam.</p>
+								<a href="#" class="read-more">Read More</a>
 							</div>
 						</div>
 						<div class="col-xs-6 col-md-4 section-services__service-tile">
 							<img src="images/services/implant-restorations.jpg" alt="">
 							<div class="section-services__service-tile__container">
 								<h1>Implant Restoration</h1>
-								<p>Dental implants are a great option for replacing missing teeth, improving chewing ability, eliminating bridges...</p>
-								<a href="#" data-toggle="modal" data-target="#modal-service-implant">Read More</a>
-							</div>
-							<!--Service Modal-->
-							<div class="modal fade" id="modal-service-implant" tabindex="-1" role="dialog">
-								<div class="modal-dialog" role="document">
-									<div class="modal-content">
-										<div class="modal-header">
-											<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-										</div>
-										<div class="modal-body center">
-											<h3>Implant Restoration</h3>
-											<p>Care by professionals. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet earum, eius explicabo ipsa obcaecati perspiciatis quam totam.</p>
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet earum, eius explicabo ipsa obcaecati perspiciatis quam totam.</p>
-										</div>
-									</div>
-								</div>
+								<p class="closed">Care by professionals. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet earum, eius
+									explicabo ipsa obcaecati perspiciatis quam totam.
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet earum, eius explicabo ipsa obcaecati
+									perspiciatis quam totam.</p>
+								<a href="#" class="read-more">Read More</a>
 							</div>
 						</div>
 						<div class="col-xs-6 col-md-4 section-services__service-tile">
 							<img src="images/services/veneers.jpg" alt="">
 							<div class="section-services__service-tile__container">
 								<h1>Veneers & Laminates</h1>
-								<p>Venners and laminates are very thin porcelain pieces that are custom made to adhere directly to the front of teeth...</p>
-								<a href="#" data-toggle="modal" data-target="#modal-service-family">Read More</a>
-							</div>
-							<!--Service Modal 2-->
-							<div class="modal fade" id="modal-service-family" tabindex="-1" role="dialog">
-								<div class="modal-dialog" role="document">
-									<div class="modal-content">
-										<div class="modal-header">
-											<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-										</div>
-										<div class="modal-body center">
-											<h3>Veneers & Laminates</h3>
-											<p>Care by professionals. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet earum, eius explicabo ipsa obcaecati perspiciatis quam totam.</p>
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet earum, eius explicabo ipsa obcaecati perspiciatis quam totam.</p>
-										</div>
-									</div>
-								</div>
+								<p class="closed">Care by professionals. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet earum, eius
+									explicabo ipsa obcaecati perspiciatis quam totam.
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet earum, eius explicabo ipsa obcaecati
+									perspiciatis quam totam.</p>
+								<a href="#" class="read-more">Read More</a>
 							</div>
 						</div>
 					</div>

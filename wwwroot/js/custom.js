@@ -49,10 +49,17 @@
         rowLength = 3;
       }
     }
-
+    function readMore() {
+      $('.read-more').click(function(e){
+        e.preventDefault();
+        $(this).prev().removeClass('closed');
+        $(this).hide();
+      });
+    }
     $(document).ready(function () {
         setRowLength();
         initRows();
+      readMore();
 
         $('.load-more').on("click", function () {
           rowNum += 1;
@@ -65,8 +72,6 @@
     $(window).on("resize", function () {
       setRowLength();
       initRows();
-      console.log(rowLength);
-      console.log(rowNum);
     });
 
 
