@@ -3,14 +3,15 @@
 <head>
 
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<meta name="author" content="SemiColonWeb" />
+	<meta name="author" content="Hello World Devs" />
 
 	<!-- Stylesheets
 	============================================= -->
 	<link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700,800|Crete+Round:200,400italic|Crimson+Text:200,400,600,700italic" rel="stylesheet" type="text/css" />
 	<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+	<!--
 	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
-
+-->
 	<link rel="stylesheet" href="style.css" type="text/css" />
 	<link rel="stylesheet" href="css/swiper.css" type="text/css" />
 	<link rel="stylesheet" href="css/dark.css" type="text/css" />
@@ -39,7 +40,7 @@
 
 		<div id="home" class="page-section" style="position:absolute;top:0;left:0;width:100%;height:200px;z-index:-2;"></div>
 
-		<section id="slider" class="slider-parallax full-screen with-header swiper_wrapper clearfix">
+		<section id="slider" data-autoplay="6000" data-loop="true" class="slider-parallax full-screen with-header swiper_wrapper clearfix">
 
 			<div class="slider-parallax-inner">
 
@@ -53,11 +54,11 @@
 									<div class="smooth-scroll-btn"  data-easing="easeInOutExpo" data-speed="1500">
 										<a href="#" data-href="#section-specials" class="btn btn-danger btn-block btn-lg btn-inverted">New Patient Specials</a>
 									</div>
-									<!--<div class="smooth-scroll-btn" data-easing="easeInOutExpo" data-speed="1500">-->
-										<!--<a href="#" data-href="#section-phone">-->
-											<!--<img id="down-arrow" src="images/down-arrow-white.svg" alt="down arrow">-->
-										<!--</a>-->
-									<!--</div>-->
+									<div class="smooth-scroll-btn" data-easing="easeInOutExpo" data-speed="1500">
+										<a href="#" data-href="#section-phone">
+											<img id="down-arrow" src="images/down-arrow-white.svg" alt="down arrow">
+										</a>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -86,9 +87,6 @@
 							</div>
 						</div>
 					</div>
-					<div id="slider-arrow-left"><i class="icon-angle-left"></i></div>
-					<div id="slider-arrow-right"><i class="icon-angle-right"></i></div>
-					<div id="slide-number"><div id="slide-number-current"></div><span>/</span><div id="slide-number-total"></div></div>
 				</div>
 
 			</div>
@@ -146,11 +144,13 @@
 
 					<div class="container clearfix">
 						<div class="row">
-							<div class="section-phone__left col-xs-6">
-								<h5>New Patient Hotline</h5>
-								<h2 class="phone-number">(888) 335-3249</h2>
+							<div class="section-phone__left col-md-6">
+								<div class="right-border">
+									<h5>New Patient Hotline</h5>
+									<h2 class="phone-number">(888) 335-3249</h2>
+								</div>
 							</div>
-							<div class="section-phone__right col-xs-6">
+							<div class="section-phone__right col-md-6">
 								<a href="#" class="btn btn-danger btn-block btn-lg">Request Appointment</a>
 							</div>
 						</div>
@@ -172,20 +172,25 @@
 					<div class="clearfix">
 
 						<div class="row">
-							<div class="col-sm-12 col-md-8" >
-								<div id="section-team__main-photo" class="col-sm-6">
-								</div>
-
-								<div id="section-team__hooie-bio" class="col-sm-6">
-									<h3>Donald G. Hooie, DDS</h3>
-									<p>Dr. Hooie graduated with honors from the University of Tennessee College of Dentistry. Each year, Dr. Hooie continues his education with some of the most well-known clinicians in the country focusing on teeth-whitening, dentures, implants, crowns, dental bridges, tooth-colored fillings, non-surgical gum care, single-visit root canal therapy, laser dentistry, and adult orthodontics.</p>
-									<p>Dr. Hooie's memberships include the American Dental Association, the Tennessee Dental Association, the Crossville Dental Society, adn the Association of Military Surgeons. He is heighly-involved in helping those without access to qulity dental and is a volunteer dentist at Remote Area Medical, the Navajo Indian Reservation, the Kuna Indian Reservation, and in Panama.</p>
-									<p>When not in the offic, Dr. Hooie holds multiple positions at First united Methodist Church, including playin the bas with the praise band, Boy Scouts, and Crossville Lions Club, where he is a past president. He enjoys canoeing, kayaking, climbing/rappelling, and family time.</p>
-								</div>
+							<div id="section-team__main-photo" class="col-sm-6 col-md-4">
 							</div>
 
+							<div id="section-team__hooie-bio" class="col-sm-6 col-md-4">
+								<h3>Donald G. Hooie, DDS</h3>
+								<p>Dr. Hooie graduated with honors from the University of Tennessee College of Dentistry. Each year, Dr.
+									Hooie continues his education with some of the most well-known clinicians in the country focusing on
+									teeth-whitening, dentures, implants, crowns, dental bridges, tooth-colored fillings, non-surgical gum
+									care, single-visit root canal therapy, laser dentistry, and adult orthodontics.</p>
+								<p>Dr. Hooie's memberships include the American Dental Association, the Tennessee Dental Association,
+									the Crossville Dental Society, adn the Association of Military Surgeons. He is heighly-involved in
+									helping those without access to qulity dental and is a volunteer dentist at Remote Area Medical, the
+									Navajo Indian Reservation, the Kuna Indian Reservation, and in Panama.</p>
+								<p>When not in the offic, Dr. Hooie holds multiple positions at First united Methodist Church, including
+									playin the bas with the praise band, Boy Scouts, and Crossville Lions Club, where he is a past
+									president. He enjoys canoeing, kayaking, climbing/rappelling, and family time.</p>
+							</div>
 							<div id="section-team__team-carousel" class="col-sm-12 col-md-4">
-								<div class="fslider testimonial testimonial-full nobgcolor noborder noshadow nopadding" data-arrows="false">
+								<div class="fslider customjs testimonial testimonial-full nobgcolor noborder noshadow " data-arrows="false">
 									<div class="flexslider">
 										<div class="slider-wrap">
 											<div class="slide">
@@ -245,25 +250,25 @@
 						</div>
 
 						<div class="row">
-							<div class="col-md-4">
+							<div class="col-md-4 halfcircle">
 								<h1 class="specials-token"><span class="small-token nocolor">$</span>65</h1>
-								<h3>New Patient</h3>
+								<h3 class="undercircle">New Patient</h3>
 								<h3>Dental Exam</h3>
 								<h5>Save $170</h5>
 								<p>Includes comprehensive exam by the doctor and necessary x-rays.</p>
 								<p>(D0150, D0210)</p>
 							</div>
-							<div class="col-md-4">
+							<div class="col-md-4 halfcircle">
 								<h1 class="specials-token"><span class="small-token nocolor">$</span>45</h1>
-								<h3>New Patient</h3>
+								<h3 class="undercircle">New Patient</h3>
 								<h3>Dental Cleaning</h3>
 								<h5>Save $145</h5>
 								<p>Includes a professional dental cleaning. A new patient exam is required. Does not include periodontal therapy.</p>
 								<p>(D1110)</p>
 							</div>
-							<div class="col-md-4">
+							<div class="col-md-4 halfcircle">
 								<h1 class="specials-token"><span class="small-token nocolor">$</span>99</h1>
-								<h3>New Children's</h3>
+								<h3 class="undercircle">New Children's</h3>
 								<h3>Cleaning & Exam</h3>
 								<h5>Save $136</h5>
 								<p>Patients 12 and under recieve a professional dental cleaning, fluoride treatment, needed x-rays, and a comprehensive exam.</p>
@@ -637,7 +642,7 @@
 				</section>
 
 				<section id="section-gallery" class="">
-					
+
 					<div class="heading center">
 						<h2>Smile Gallery</h2>
 					</div>
@@ -786,6 +791,7 @@
 	<!-- Footer Scripts
 	============================================= -->
 	<script type="text/javascript" src="js/functions.js"></script>
+	<script type="text/javascript" src="js/custom.js"></script>
 
 
 </body>
