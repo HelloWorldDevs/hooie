@@ -27,10 +27,15 @@ p {
 
 .btn-inverted {
     background-color: white;
-    border-color: #a52a2a;
-    color: #a52a2a;
+    border-color: #F55433;
+    color: #F55433;
 }
 
+.btn-danger:hover, .btn-danger:focus, .btn-danger:active, .btn-danger.active, .open .dropdown-toggle.btn-danger {
+    color: #fff;
+    background-color: #F55433;
+    border-color: #F55433;
+}
 #slider {
     line-height: 1.0;
 }
@@ -46,6 +51,7 @@ p {
 #slider h2 {
     font-weight: 800;
     text-transform: uppercase;
+    font-size: 90px;
 }
 
 #slider h3 {
@@ -82,8 +88,10 @@ p {
 
 #section-phone h2,
 #section-phone-2 h2 {
-    line-height: 1.0;
-    font-weight: 400;
+    font-weight: 700;
+    font-size: 36px;
+    color: #F3F6F9;
+    line-height: 32px;
 }
 
 #section-phone>div>div:last-child {
@@ -104,7 +112,11 @@ p {
 }
 
 .section-phone__left h5 {
-    font-weight: 200;
+    font-weight: 700;
+    font-family: "Crimson Text", sans-serif;
+    font-size: 18px;
+    color: #F3F6F9;
+    line-height: 22px;
 }
 
 .section-phone__left h2 {
@@ -112,16 +124,46 @@ p {
 }
 
 .section-phone__right {
-    margin-top: 15px;
     text-align: left;
 }
 
 .section-phone__right a {
-    margin: 10px 16px;
+    margin: 0px 16px;
+    height: 55px;
+    display: block;
+    width: 285px;
+    line-height: 30px;
+    font-size: 18px;
+    font-weight: 400;
+
 }
 
+/*======== fix missing row issue with bootstrap ======*/
+.col-xs-6:nth-child(2n+1) {
+    clear: left;
+}
+
+@media (min-width: 992px) {
+    .col-xs-6:nth-child(2n+1) {
+        clear: none;
+    }
+
+    .col-md-4:nth-child(3n+1) {
+        clear: left;
+    }
+}
+
+/*======== fix missing row issue with bootstrap ======*/
+@media (max-width: 991px) {
+    .section-phone__right a {
+        margin: 20px auto 0px;
+    }
+}
 #section-phone-2 {
     padding: 30px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, .5);
+    z-index: 2;
+    position: relative;
 }
 
 /*Team*/
@@ -232,6 +274,8 @@ p {
 
 #header {
     height: 130px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, .5);
+    z-index: 1;
 }
 #primary-menu ul li>a {
     padding-top: 55px;
@@ -272,6 +316,7 @@ p {
 }
 #header.sticky-header:not(.static-sticky), #header.sticky-header:not(.static-sticky) #header-wrap {
     height: 80px;
+    z-index: 100;
 }
 #header.sticky-header:not(.static-sticky):not(.sticky-style-2):not(.sticky-style-3) #logo img {
     height: 60px;
@@ -292,6 +337,7 @@ p {
     color: #F55433;
     font-size: 80px;
     letter-spacing: -1.12px;
+    vertical-align: middle;
 }
 
 .glyphicon-star {
@@ -311,9 +357,16 @@ p {
     }
 }
 /*Reviews*/
+.ins-byline {font-family: "Crimson Text", serif;font-size: 20px;font-weight: normal;color: #FFFFFF;line-height: 20px;}
+.btn-inverted {
+    border-width: 2px;
+}
 
 #section-reviews {
     background-color: #eeeeee;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .5);
+    z-index: 1;
+    position: relative;
 }
 
 #section-reviews__header {
@@ -321,6 +374,7 @@ p {
     background-image: url('images/reviews-irene-banner.jpg');
     background-size: cover;
     background-position: center center;
+    text-align: right;
 }
 
 #section-reviews__header .row {
@@ -328,7 +382,14 @@ p {
 }
 
 #section-reviews__header a {
-    margin-left: 40px;
+    height: 55px;
+    width: 285px;
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+    float: right;
+    margin-right: 30px;
 }
 
 #section-reviews__header h1,
@@ -345,7 +406,7 @@ p {
     font-weight: 600;
     letter-spacing: -0.68px;
     line-height: 39px;
-    margin-top: 50px;
+    padding-top: 50px;
     font-style: italic;
     text-align: right;
     margin-bottom: 5px;
@@ -372,13 +433,31 @@ p {
 #section-reviews__table {
     padding: 0px;
     border: 1px solid #cccccc;
-    overflow-y: auto;
-    height: 400px;
+    z-index: 5;
 }
-
+h5.ins-byline {
+    font-size: 18px;
+    color: #FFFFFF;
+    line-height: 28px;
+}
 #section-reviews__table table {
     margin: 0px;
     background-color: white;
+}
+.vertical-scroll {
+    overflow-y: auto;
+    height: 400px;
+}
+.inner-shadow {
+    box-shadow: inset 2px 2px 4px rgba(0,0,0,.5);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
 }
 
 /*Insurance*/
@@ -386,13 +465,18 @@ p {
 #section-insurance {
     background-image: url('images/membership-bkgd.jpg');
     background-size: cover;
-    background-position: center center;
+    background-position: right center;
+    /* height: 562px; */
 }
 
 #section-insurance a {
-    margin-top: 15px;
-    margin-bottom: 25px;
-    padding: 15px 40px;
+    height: 55px;
+    width: 285px;
+    display: block;
+    line-height: 30px;
+    font-size: 18px;
+    font-weight: 300;
+    margin: 30px auto 80px;
 }
 
 #section-insurance h1,
@@ -403,25 +487,28 @@ p {
 }
 
 #section-insurance h1 {
+    font-family: Raleway, sans-serif;
+    font-size: 40px;
+    color: #FFFFFF;
+    letter-spacing: -0.56px;
     text-transform: uppercase;
-    font-size: 45px;
-}
+    margin-top: 92px;
+    margin-bottom: 13px;
+    }
 
 #section-insurance h4:nth-child(3) {
     text-transform: uppercase;
 }
 
 #section-insurance h5 {
-    margin-bottom: 7px;
+    margin-bottom: 0px;
 }
 
-#section-insurance h5:nth-last-child(2) {
-    margin-bottom: 60px;
+#section-insurance .bottom {
+    margin-bottom: 30px;
 }
 
 #section-insurance .row {
-    padding-top: 75px;
-    padding-bottom: 75px;
 }
 /*Headers*/
 
@@ -443,14 +530,18 @@ p {
 
 /*Services*/
 
-#section-services a {
+.section-services__service-tile a {
     color: #f55433;
     text-decoration: underline !important;
     text-align: right;
+    position: absolute;
+    right: 40px;
+    bottom: -40px;
 }
 
 #section-services__footer {
     background-color: #3B5998;
+    text-align: center;
 }
 
 #section-services__footer h4 {
@@ -463,14 +554,20 @@ p {
 }
 
 .section-services__service-tile a {
-    font-size: 16px;
-    float: right;
+
+/* Read More Copy 3: */
+    font-family: Raleway-Medium;
+    font-size: 18px;
+    color: #F55433;
+    letter-spacing: -0.25px;
 }
 
 .section-services__service-tile h1 {
     margin-top: 20px;
+    margin-bottom: 5px;
+    font-size: 32px;
     color: #3B5998;
-    margin-bottom: 20px;
+    letter-spacing: -0.45px;
 }
 
 .section-services__service-tile__container {
@@ -478,19 +575,20 @@ p {
 }
 
 .section-services__service-tile__container p {
-    color: #888888;
     margin-bottom: 0px;
     font-family: 'Crimson Text', serif;
-    font-size: 17px;
-    font-weight: 400;
+    font-weight: 200;
+    font-size: 18px;
+    color: #818386;
+    letter-spacing: -0.25px;
 }
 /*Gallery*/
 
 #section-gallery {
-    margin-top: -30px;
     background-color: #f4f4f4;
     padding-top: 30px;
     padding-bottom: 70px;
+    box-shadow: 0 2px 4px rgba(0,0,0,.5);
 }
 
 #section-gallery p {
@@ -519,6 +617,7 @@ p {
     #section-gallery .row {
         text-align: center;
         padding: 0px 15%;
+        /* box-shadow: 0 2px 4px rgba(0,0,0,.5); */
     }
 }
 
@@ -542,26 +641,44 @@ p {
 #section-location h1,
 #section-location h2,
 #section-location h3 {
-    color: #a52a2a;
+
+/* (888) 335-3249: */
+    font-family: Lato-Bold;
+    color: #F55433;
 }
 
 #section-location h3 {
-    margin-bottom: 45px;
+    margin-bottom: 13px;
 }
 
 #section-location h5 {
-    color: black;
+
+/* New Patient Hotline: */
+    font-family: CrimsonText-Semibold;
+    font-size: 18px;
+    color: #202020;
 }
 
-#section-location a {
+#section-location .btn {
     margin-top: 20px;
+    width: 285px;
+    height: 55px;
+    display: block;
+    margin: 0 auto;
+    line-height: 30px;
+    font-size: 18px;
+    font-weight: 600;
 }
-
-#section-location p:first-child {
+.btn-lrg {
+border-radius: 8px;
+}
+#section-location .address {
     margin-top: 45px;
     margin-bottom: 0px;
 }
-
+.address p {
+    margin: 0;
+}
 #section-location__hours {
     padding: 20px;
     background-color: #efeeee;
@@ -582,7 +699,7 @@ p {
     font-family: 'Raleway', sans-serif;
     font-size: 36px;
     line-height: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 #contact-logo a {
@@ -613,7 +730,7 @@ p {
 /*Specials*/
 
 #section-specials__header {
-    height: 400px;
+    height: 294px;
     background-image: url('images/specials-photo.jpg');
     background-size: cover;
     background-position: center center;
@@ -622,7 +739,7 @@ p {
 
 #section-specials__header h1 {
     letter-spacing: -1px;
-    font-size: 60px;
+    font-size: 40px;
     text-transform: uppercase;
     padding-top: 85px;
     margin-bottom: 0px;
@@ -633,16 +750,19 @@ p {
     text-transform: none;
     font-weight: 500;
     margin-top: 0px;
+    font-size: 24px;
 }
 
 #section-specials__header h1,
 #section-specials__header h2 {
     color: white;
 }
-
+#section-specials {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, .5);
+    z-index: 3;
+}
 #section-specials .row {
     text-align: center;
-    margin-bottom: 40px;
 }
 
 
@@ -672,27 +792,41 @@ p {
 }
 .overlap {
     top: -65px;
+    margin-bottom: -65px;
     position: relative;
 }
 .undercircle {
 }
 
 #section-specials .row h3 {
+    /* New Patient Dental E: */
+    font-family: "Raleway", sans-serif;
+    font-size: 32px;
+    color: #3B5998;
+    letter-spacing: -0.45px;
     font-weight: 600;
-    font-size: 35px;
     margin-bottom: 5px;
     line-height: 1.0;
 }
 
 #section-specials .row h5 {
     margin-top: 15px;
-    font-size: 22px;
     text-transform: uppercase;
-    font-weight: 100;
+    margin-bottom: 30px;
+    font-weight: 500;
+    font-family: Raleway, sans-serif;
+    font-size: 18px;
     color: #3B5998;
-    margin-bottom: 40px;
+    letter-spacing: -0.25px;
 }
 
+#section-specials .description {
+    margin-bottom: 0px;
+}
+
+#section-specials .row .footnote {
+    font-size: 16px;
+}
 #section-specials .row h1,
 #section-specials .row h3,
 #section-specials .row h5 {
@@ -700,8 +834,11 @@ p {
 }
 
 #section-specials .row p {
-    color: grey;
-    margin-bottom: 0px;
+    font-family: "Crimson Text", serif;
+    font-size: 18px;
+    color: #818386;
+    letter-spacing: -0.25px;
+    line-height: 23px;
 }
 .small-token {
     font-size: 40px;
@@ -711,6 +848,11 @@ p {
 @media (max-width: 767px) {
     .slider-caption h2 {
         margin-bottom: 10px !important;
+    }
+}
+@media (max-width: 1110px) {
+    #primary-menu ul li > a {
+    padding: 39px 10px;
     }
 
 }

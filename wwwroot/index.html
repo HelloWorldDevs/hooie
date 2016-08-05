@@ -7,7 +7,7 @@
 
 	<!-- Stylesheets
 	============================================= -->
-	<link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700,800|Crete+Round:200,400italic|Crimson+Text:200,italic,400,600,600italic,700italic" rel="stylesheet" type="text/css" />
+	<link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700,800|Crete+Round:200,400italic|Crimson+Text:200,italic,300,400,600,600italic,700italic" rel="stylesheet" type="text/css" />
 	<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
 	<!--
 	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
@@ -28,7 +28,7 @@
 
 	<!-- Document Title
 	============================================= -->
-	<title>Home - One Page Layout | Canvas</title>
+	<title>Hooie Dental</title>
 
 </head>
 
@@ -49,13 +49,13 @@
 						<div class="swiper-slide dark" style="background-image: url('images/slides/slide1.jpg');">
 							<div class="container clearfix">
 								<div class="slider-caption slider-caption-center">
-									<h2 data-caption-animate="fadeInUp" style="margin-bottom: 0px;">Now Welcoming</h2>
+									<h2 data-caption-animate="fadeInUp">Now Welcoming</h2>
 									<h2 data-caption-animate="fadeInUp">New Patients</h2>
-									<div class="smooth-scroll-btn"  data-easing="easeInOutExpo" data-speed="1500">
-										<a href="#" data-href="#section-specials" class="btn btn-danger btn-block btn-lg btn-inverted">New Patient Specials</a>
+									<div data-caption-animate="fadeInUp" class="smooth-scroll-btn"  data-easing="easeInOutExpo" data-speed="1500">
+										<a href="" data-href="#section-specials" class="btn btn-danger btn-block btn-lg btn-inverted">New Patient Specials</a>
 									</div>
-									<div class="smooth-scroll-btn" data-easing="easeInOutExpo" data-speed="1500">
-										<a href="#" data-href="#section-phone">
+									<div data-caption-animate="fadeInUp" class="smooth-scroll-btn" data-easing="easeInOutExpo" data-speed="1500">
+										<a href="" data-href="#section-phone">
 											<img id="down-arrow" src="images/down-arrow-white.svg" alt="down arrow">
 										</a>
 									</div>
@@ -67,7 +67,18 @@
 								<div class="slider-caption slider-caption-center">
 									<h2 data-caption-animate="fadeInUp" style="margin-bottom: 0px">No Insurance?</h2>
 									<h2 data-caption-animate="fadeInUp">Start Saving Today!</h2>
-									<a href="#section-insurance" class="btn btn-danger btn-block btn-lg btn-inverted">Join Our Membership Club</a>
+									<div data-caption-animate="fadeInUp" class="smooth-scroll-btn" data-easing="easeInOutExpo"
+											 data-speed="1500">
+
+											<a data-href="#section-insurance" href="" class="btn btn-danger btn-block btn-lg btn-inverted">Join Our Membership Club</a>
+
+										</div>
+									<div data-caption-animate="fadeInUp" class="smooth-scroll-btn" data-easing="easeInOutExpo"
+											 data-speed="1500">
+										<a href="" data-href="#section-phone">
+											<img id="down-arrow" src="images/down-arrow-white.svg" alt="down arrow">
+										</a>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -82,7 +93,16 @@
 										<span class="glyphicon glyphicon-star nocolor"></span>
 									</h2>
 									<h3 data-caption-animate="fadeInUp">"Have always had excellent service. The staff is fantastic." <span class="quoter nocolor">-Judy</span></h3>
-									<a href="#section-reviews" class="btn btn-danger btn-block btn-lg btn-inverted">Read Our Patient Reviews</a>
+									<div data-caption-animate="fadeInUp" class="smooth-scroll-btn" data-easing="easeInOutExpo"
+											 data-speed="1500">
+										<a data-href="#section-reviews" href="" class="btn btn-danger btn-block btn-lg btn-inverted">Read Our Patient Reviews</a>
+									</div>
+									<div data-caption-animate="fadeInUp" class="smooth-scroll-btn" data-easing="easeInOutExpo"
+											 data-speed="1500">
+										<a href="" data-href="#section-phone">
+											<img id="down-arrow" src="images/down-arrow-white.svg" alt="down arrow">
+										</a>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -237,42 +257,42 @@
 					</div>
 
 				</section>
-
-				<section id="section-specials" class="page-section">
+				<section id="section-specials__header">
+					<div class="heading center">
+						<h1>Limited Time Summer Specials</h1>
+						<h2>Offer ends by September 20, 2016</h2>
+					</div>
+				</section>
+				<section id="section-specials" class="page-section overlap">
 
 					<div class="clearfix">
 
-						<div id="section-specials__header">
-							<div class="heading center">
-								<h1>Limited Time Summer Specials</h1>
-								<h2>Offer ends by September 20, 2016</h2>
-							</div>
-						</div>
 
-						<div class="row overlap">
+
+						<div class="row ">
 							<div class="col-md-4 halfcircle">
 								<h1 class="specials-token"><span class="small-token nocolor">$</span>65</h1>
 								<h3 class="undercircle">New Patient</h3>
 								<h3>Dental Exam</h3>
 								<h5>Save $170</h5>
-								<p>Includes comprehensive exam by the doctor and necessary x-rays.</p>
-								<p>(D0150, D0210)</p>
+								<p class="description">Includes comprehensive exam by the doctor and necessary x-rays.</p>
+								<p class="footnote">(D0150, D0210)</p>
 							</div>
 							<div class="col-md-4 halfcircle">
 								<h1 class="specials-token"><span class="small-token nocolor">$</span>45</h1>
 								<h3 class="undercircle">New Patient</h3>
 								<h3>Dental Cleaning</h3>
 								<h5>Save $145</h5>
-								<p>Includes a professional dental cleaning. A new patient exam is required. Does not include periodontal therapy.</p>
-								<p>(D1110)</p>
+								<p class="description">Includes a professional dental cleaning. A new patient exam is required. Does not include periodontal therapy.</p>
+								<p class="footnote">(D1110)</p>
 							</div>
 							<div class="col-md-4 halfcircle">
 								<h1 class="specials-token"><span class="small-token nocolor">$</span>99</h1>
 								<h3 class="undercircle">New Children's</h3>
 								<h3>Cleaning & Exam</h3>
 								<h5>Save $136</h5>
-								<p>Patients 12 and under recieve a professional dental cleaning, fluoride treatment, needed x-rays, and a comprehensive exam.</p>
-								<P>(D1120, D1208, D0274, D0150)</P>
+								<p class="description">Patients 12 and under recieve a professional dental cleaning, fluoride treatment, needed x-rays, and a comprehensive exam.</p>
+								<p class="footnote">(D1120, D1208, D0274, D0150)</p>
 							</div>
 						</div>
 
@@ -284,11 +304,11 @@
 
 					<div class="clearfix">
 						<div class="row">
-							<div class="section-phone__left col-xs-6">
+							<div class="section-phone__left col-md-6">
 								<h5>New Patient Hotline</h5>
 								<h2 class="phone-number">(888) 335-3249</h2>
 							</div>
-							<div class="section-phone__right col-xs-6">
+							<div class="section-phone__right col-md-6">
 								<a href="#" class="btn btn-danger btn-block btn-lg">Request Appointment</a>
 							</div>
 						</div>
@@ -305,7 +325,7 @@
 								<h1><span class="big-quote nocolor">“</span> I love coming here.&nbsp;</h1>
 								<h3>–Irene H.</h3>
 								<a href="#" class="btn btn-danger btn-block btn-lg btn-inverted" data-toggle="modal"
-									 data-target="#modal-video">Watch The Video <span class="glyphicon glyphicon-film"
+									 data-target="#modal-video">Watch The Video <span class="glyphicon glyphicon-expand"
 																																		aria-hidden="true"></span></a>
 							</div>
 						</div>
@@ -328,140 +348,15 @@
 							<h2>Patient Reviews</h2>
 						</div>
 
-						<div id="section-reviews__table" class="container">
-							<table class="table table-bordered">
-								<tr>
-									<td>
-										<p>
-											<span class="glyphicon glyphicon-star nocolor"></span>
-											<span class="glyphicon glyphicon-star nocolor"></span>
-											<span class="glyphicon glyphicon-star nocolor"></span>
-											<span class="glyphicon glyphicon-star nocolor"></span>
-											<span class="glyphicon glyphicon-star nocolor"></span>
-											<span> (5 star)</span>
-										</p>
-										<p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, impedit, sed."</p>
-										<p>by Donna A.</p>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<p>
-											<span class="glyphicon glyphicon-star nocolor"></span>
-											<span class="glyphicon glyphicon-star nocolor"></span>
-											<span class="glyphicon glyphicon-star nocolor"></span>
-											<span class="glyphicon glyphicon-star nocolor"></span>
-											<span class="glyphicon glyphicon-star nocolor"></span>
-											<span> (5 star)</span>
-										</p>
-										<p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, impedit, sed."</p>
-										<p>by Donna A.</p>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<p>
-											<span class="glyphicon glyphicon-star nocolor"></span>
-											<span class="glyphicon glyphicon-star nocolor"></span>
-											<span class="glyphicon glyphicon-star nocolor"></span>
-											<span class="glyphicon glyphicon-star nocolor"></span>
-											<span class="glyphicon glyphicon-star nocolor"></span>
-											<span> (5 star)</span>
-										</p>
-										<p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, impedit, sed."</p>
-										<p>by Donna A.</p>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<p>
-											<span class="glyphicon glyphicon-star nocolor"></span>
-											<span class="glyphicon glyphicon-star nocolor"></span>
-											<span class="glyphicon glyphicon-star nocolor"></span>
-											<span class="glyphicon glyphicon-star nocolor"></span>
-											<span class="glyphicon glyphicon-star nocolor"></span>
-											<span> (5 star)</span>
-										</p>
-										<p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, impedit, sed."</p>
-										<p>by Donna A.</p>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<p>
-											<span class="glyphicon glyphicon-star nocolor"></span>
-											<span class="glyphicon glyphicon-star nocolor"></span>
-											<span class="glyphicon glyphicon-star nocolor"></span>
-											<span class="glyphicon glyphicon-star nocolor"></span>
-											<span class="glyphicon glyphicon-star nocolor"></span>
-											<span> (5 star)</span>
-										</p>
-										<p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, impedit, sed."</p>
-										<p>by Donna A.</p>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<p>
-											<span class="glyphicon glyphicon-star nocolor"></span>
-											<span class="glyphicon glyphicon-star nocolor"></span>
-											<span class="glyphicon glyphicon-star nocolor"></span>
-											<span class="glyphicon glyphicon-star nocolor"></span>
-											<span class="glyphicon glyphicon-star nocolor"></span>
-											<span> (5 star)</span>
-										</p>
-										<p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, impedit, sed."</p>
-										<p>by Donna A.</p>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<p>
-											<span class="glyphicon glyphicon-star nocolor"></span>
-											<span class="glyphicon glyphicon-star nocolor"></span>
-											<span class="glyphicon glyphicon-star nocolor"></span>
-											<span class="glyphicon glyphicon-star nocolor"></span>
-											<span class="glyphicon glyphicon-star nocolor"></span>
-											<span> (5 star)</span>
-										</p>
-										<p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, impedit, sed."</p>
-										<p>by Donna A.</p>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<p>
-											<span class="glyphicon glyphicon-star nocolor"></span>
-											<span class="glyphicon glyphicon-star nocolor"></span>
-											<span class="glyphicon glyphicon-star nocolor"></span>
-											<span class="glyphicon glyphicon-star nocolor"></span>
-											<span class="glyphicon glyphicon-star nocolor"></span>
-											<span> (5 star)</span>
-										</p>
-										<p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, impedit, sed."</p>
-										<p>by Donna A.</p>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<p>
-											<span class="glyphicon glyphicon-star nocolor"></span>
-											<span class="glyphicon glyphicon-star nocolor"></span>
-											<span class="glyphicon glyphicon-star nocolor"></span>
-											<span class="glyphicon glyphicon-star nocolor"></span>
-											<span class="glyphicon glyphicon-star nocolor"></span>
-											<span> (5 star)</span>
-										</p>
-										<p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, impedit, sed."</p>
-										<p>by Donna A.</p>
-									</td>
-								</tr>
-
-							</table>
+						<div id="section-reviews__table" class="vertical-scroll">
+							<div class="vertical-scroll">
+								<script type="text/javascript" src="//birdeye.com/embed/v4/146542586163303/3/3577645481"></script>
+								<div id="bf-revz-widget-3577645481" style="-webkit-overflow-scrolling:touch;">
+									<div class="bf-dv"><span class="bf-spn">provided by <a class="bf-pro" href="null" target="_blank">Tyson Steele Associates</a> | powered by <a
+											class="bf-pwr" href="//birdeye.com" target="_blank">BirdEye</a></span></div>
+								</div>
+							</div>
 						</div>
-
-						<p class="center">provided by <span style="text-decoration: underline;">Tyson Steele Associates</span></p>
-
 					</div>
 
 				</section>
@@ -472,12 +367,12 @@
 						<div class="col-md-4 col-md-offset-6">
 							<div class="center">
 								<h1>No Insurance?</h1>
-								<h4>Join the Hooie Dental Membership Club and Start Saving Today!</h4>
-								<h4>Adult Programs start at $27/mo.</h4>
-								<h5>Easy Monthly Payments with Plans for All Family Members</h5>
-								<h5>No Exclusions for Cosmetic or Elective Care</h5>
-								<h5>No Yearly Maximum Benefits, and No Deductibles!</h5>
-								<h5>Up to 10% Discount on Needed Treatments</h5>
+								<h4 class="ins-byline">Join the Hooie Dental Membership Club and Start Saving Today!</h4>
+								<h4 class="ins-byline">Adult Programs start at $27/mo.</h4>
+								<h5 class="ins-byline">Easy Monthly Payments with Plans for All Family Members</h5>
+								<h5 class="ins-byline">No Exclusions for Cosmetic or Elective Care</h5>
+								<h5 class="ins-byline">No Yearly Maximum Benefits, and No Deductibles!</h5>
+								<h5 class="ins-byline">Up to 10% Discount on Needed Treatments</h5>
 								<a href="#" class="btn btn-danger btn-block btn-lg">Sign Up Now <span class="glyphicon glyphicon/ glyphicon-ok"></span></a>
 							</div>
 						</div>
@@ -634,7 +529,7 @@
 					</div>
 
 					<div id="section-services__footer">
-						<h4 class="center">Click Here To View More Services</h4>
+						<a class="center load-more">Click Here To View More Services</a>
 					</div>
 
 				</section>
@@ -720,10 +615,10 @@
 							</div>
 						</div>
 						<div class="col-sm-6 col-md-4" class="center">
-							<div class="center">
+							<div class="center address">
 								<p>758 S Main St.</p>
 								<p>Crossville, TN 38555</p>
-								<p>Fax:(931) 458-3679</p>
+								<p class="phone">Fax:(931) 458-3679</p>
 							</div>
 
 							<div id="section-location__hours">

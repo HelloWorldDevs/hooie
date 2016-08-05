@@ -25,5 +25,50 @@
       after: function () {
       }
     });
+
+    rowLength = 3;
+    rowNum = 1;
+    function initRows() {
+      var $cells = $('.section-services__service-tile');
+      for (var x = 0; x < $cells.length; x++) {
+        if (x < (rowLength * rowNum)) {
+          $($cells[x]).removeClass('hidden');
+        } else {
+          $($cells[x]).addClass('hidden');
+        }
+        if($cells.length <= (rowLength * rowNum)) {
+          $('.load-more').hide();
+        }
+      }
+    }
+
+    function setRowLength() {
+      if ($(window).width() < 992) {
+        rowLength = 2;
+      } else {
+        rowLength = 3;
+      }
+    }
+
+    $(document).ready(function () {
+        setRowLength();
+        initRows();
+
+        $('.load-more').on("click", function () {
+          rowNum += 1;
+          initRows();
+        });
+
+
+      }
+    );
+    $(window).on("resize", function () {
+      setRowLength();
+      initRows();
+      console.log(rowLength);
+      console.log(rowNum);
+    });
+
+
   });
 })(jQuery);
