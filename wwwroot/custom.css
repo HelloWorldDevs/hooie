@@ -4,7 +4,7 @@
 }
 
 p {
-    font-family: 'Crimson Text';
+    font-family: 'Crimson Text', serif;
 }
 /*Buttons*/
 
@@ -288,8 +288,10 @@ p {
 }
 
 .big-quote {
-    font-size: 200%;
-    color: #a52a2a;
+    font-family: "Crimson Text", serif;
+    color: #F55433;
+    font-size: 80px;
+    letter-spacing: -1.12px;
 }
 
 .glyphicon-star {
@@ -315,8 +317,7 @@ p {
 }
 
 #section-reviews__header {
-    margin-top: -20px;
-    height: 420px;
+    height: 290px;
     background-image: url('images/reviews-irene-banner.jpg');
     background-size: cover;
     background-position: center center;
@@ -333,21 +334,30 @@ p {
 #section-reviews__header h1,
 #section-reviews__header h3 {
     color: black;
-    font-family: 'Crimson Text';
+    font-family: 'Crimson Text', serif;
 
 }
 
 #section-reviews__header h1 {
-    font-size: 50px;
-    margin-top: 15px;
-    margin-bottom: 0px;
+    font-family: 'Crimson Text', serif;
+    font-size: 48px;
+    color: #202020;
+    font-weight: 600;
+    letter-spacing: -0.68px;
+    line-height: 39px;
+    margin-top: 50px;
+    font-style: italic;
+    text-align: right;
+    margin-bottom: 5px;
 }
 
 #section-reviews__header h3 {
     text-align: right;
-    font-size: 30px;
-    color: #323232;
-    font-weight: 100;
+    font-size: 24px;
+    font-style: italic;
+    color: #202020;
+    letter-spacing: -0.34px;
+    font-weight: normal;
 }
 
 #section-reviews__table p {
@@ -645,10 +655,7 @@ p {
 #section-specials .row h1 {
     font-size: 70px;
     font-weight: 900;
-    position: absolute;
-    top: -67px;
-    left: 45%;
-    left: calc(50% - 50px);
+    position: relative;
 }
 
 .halfcircle:before {
@@ -657,30 +664,19 @@ p {
     width: 130px;
     height: 130px;
     position: absolute;
-    top: -67px;
-    left: 43%;
-    left: calc(50% - 60px);
+    top: 0;
+    left: 35%;
+     left: calc(50% - 65px);
     display: block;
     border-radius: 100px;
 }
-
+.overlap {
+    top: -65px;
+    position: relative;
+}
 .undercircle {
-    margin-top: 60px;
 }
 
-@media screen and (max-width: 992px) {
-    .halfcircle:before {
-        top:-117px;
-    }
-
-    #section-specials .row h1 {
-        top:-117px;
-    }
-
-    .undercircle {
-        margin-top: 100px;
-    }
-}
 #section-specials .row h3 {
     font-weight: 600;
     font-size: 35px;
