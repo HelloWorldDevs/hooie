@@ -1,6 +1,8 @@
 (function($) {
-  $(document).ready(function(){
-    console.log("GOT HERE");
+  var HelloWorldDevs = function() {
+    this.rowLength = 3;
+    this.rowNum = 1;
+    that = this;
     $('.fslider.customjs').flexslider({
       selector: ".slider-wrap > .slide",
       animation: 'slide',
@@ -21,59 +23,42 @@
         SEMICOLON.widget.animations();
         SEMICOLON.initialize.verticalMiddle();
         slider.removeClass('preloader2');
-      },
-      after: function () {
       }
     });
 
-    rowLength = 3;
-    rowNum = 1;
-    function initRows() {
-      var $cells = $('.section-services__service-tile');
-      for (var x = 0; x < $cells.length; x++) {
-        if (x < (rowLength * rowNum)) {
-          $($cells[x]).removeClass('hidden');
-        } else {
-          $($cells[x]).addClass('hidden');
-        }
-        if($cells.length <= (rowLength * rowNum)) {
-          $('.load-more').hide();
-        }
-      }
-    }
+    $('.read-more').click(function (e) {
+      e.preventDefault();
+      $(this).prev().removeClass('closed');
+      $(this).hide();
+    });
+    $('.load-more').on("click", function () {
+      HWD.rowNum += 1;
+      HWD.fixRows();
+    });
+  };
 
-    function setRowLength() {
-      if ($(window).width() < 992) {
-        rowLength = 2;
+  HelloWorldDevs.prototype.fixRows = function () {
+    var rowLength = ($(window).width() < 992) ? 2 : 3;
+    var mod = rowLength * this.rowNum;
+    var $cells = $('.section-services__service-tile');
+    var $loadMore = $('.load-more');
+    for (var x = 0; x < $cells.length; x++) {
+      if (x < mod) {
+        $($cells[x]).removeClass('hidden');
       } else {
-        rowLength = 3;
+        $($cells[x]).addClass('hidden');
+      }
+      if ($cells.length <= mod) {
+        $loadMore.hide();
       }
     }
-    function readMore() {
-      $('.read-more').click(function(e){
-        e.preventDefault();
-        $(this).prev().removeClass('closed');
-        $(this).hide();
-      });
-    }
-    $(document).ready(function () {
-        setRowLength();
-        initRows();
-      readMore();
+  };
 
-        $('.load-more').on("click", function () {
-          rowNum += 1;
-          initRows();
-        });
-
-
-      }
-    );
-    $(window).on("resize", function () {
-      setRowLength();
-      initRows();
-    });
-
-
+  var HWD = new HelloWorldDevs();
+  $(document).ready(function () {
+    HWD.fixRows();
+  });
+  $(window).on("resize", function () {
+    HWD.fixRows();
   });
 })(jQuery);

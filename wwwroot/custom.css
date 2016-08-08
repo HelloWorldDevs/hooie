@@ -25,23 +25,110 @@ p {
     text-transform: uppercase;
 }
 
-.btn-inverted {
-    background-color: white;
-    border-color: #F55433;
-    color: #F55433;
+.btn-inverted, .btn.btn-danger:hover {
+  border-color: #F55433;
+  color: #F55433;
+  background-color: white;
 }
 
-.btn-danger:hover, .btn-danger:focus, .btn-danger:active, .btn-danger.active, .open .dropdown-toggle.btn-danger {
-    color: #fff;
-    background-color: #F55433;
-    border-color: #F55433;
+.btn-inverted.btn:hover, .open .dropdown-toggle.btn-danger {
+  border-color: #F55433;
+  color: #fff;
+  background-color: #F55433;
 }
+
+/**
+ * Image slider with pure CSS
+ * Original version in http://demosthenes.info/blog/css
+ */
+
+.image-slider {
+    position: relative;
+    display: inline-block;
+    line-height: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Could use a pseudo-element, but theyâ€™re currently
+   super buggy. See: http://dabblet.com/gist/ab432c3f6a8f672cd077 */
+.image-slider > div {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    max-width: 100%;
+    overflow: hidden;
+    resize: horizontal;
+    border-right: 2px solid white;
+    /* min-height: 100%; */
+}
+
+/* Cross-browser resizer styling */
+.image-slider > div:before {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 35px;
+    height: 35px;
+    padding: 5px;
+    background: linear-gradient(-45deg, white 50%, transparent 0);
+    background-clip: content-box;
+    cursor: ew-resize;
+    -webkit-filter: drop-shadow(0 0 2px black);
+    filter: drop-shadow(0 0 2px black);
+    transform: rotate(-45deg);
+}
+
+.image-slider img {
+    user-select: none;
+    min-width: 100%;
+}
+.image-slider div img {
+  min-height: 100%;
+  max-width: initial;
+}
+.left.carousel-control,
+.right.carousel-control {
+  width: 10px;
+  background: none;
+}
+
 #slider {
     line-height: 1.0;
 }
+#smile-gallery .item {
+  text-align: center;
+}
+#smile-gallery .carousel {
+  margin-bottom: 20px;
+  padding: 0px 30px;
+}
 
+.instructions {
+  text-align: center;
+  margin: 40px 0px 20px;
+}
+.carousel-control .fa-chevron-right {
+  left: -10px;
+}
+.carousel-indicators {
+  margin-bottom: 0;
+  bottom: -30px;
+}
+
+.carousel-indicators li {
+  border-color: #000;
+}
+
+.carousel-indicators li.active {
+  background: #000;
+}
 #slider .btn-inverted {
     border-radius: 0px;
+    margin-top: 30px;
 }
 
 #slider a {
@@ -53,6 +140,7 @@ p {
     font-weight: 800;
     text-transform: uppercase;
     font-size: 90px;
+    margin-bottom: 0px;
 }
 
 #slider h3 {
@@ -66,7 +154,7 @@ p {
 #down-arrow {
     width: 50px;
     display: block;
-    margin: 35px auto;
+    margin: 15px auto;
 }
 
 .slider-caption h2 {
@@ -100,7 +188,7 @@ p {
 }
 
 .phone-number {
-    font-family: 'Lato';
+    font-family: 'Lato', sans-serif;
 }
 
 .section-phone__left {
@@ -130,13 +218,6 @@ p {
 
 .section-phone__right a {
     margin: 0px 16px;
-    height: 55px;
-    display: block;
-    width: 285px;
-    line-height: 30px;
-    font-size: 18px;
-    font-weight: 400;
-
 }
 
 /*======== fix missing row issue with bootstrap ======*/
@@ -155,6 +236,7 @@ p {
 }
 
 /*======== fix missing row issue with bootstrap ======*/
+
 @media (max-width: 991px) {
     .section-phone__right a {
         margin: 20px auto 0px;
@@ -220,6 +302,9 @@ p {
     margin: 0 auto;
 }
 
+.top-headline {
+    margin-top: 100px;
+}
 @media (max-width: 991px) {
     #section-team__team-carousel {
         clear: both;
@@ -228,7 +313,12 @@ p {
     #section-team__hooie-bio {
         min-height: 500px;
     }
+
+    .top-headline {
+        margin-top: 0px;
+    }
 }
+
 .testimonial {
     border-radius: 0px;
 }
@@ -237,6 +327,14 @@ p {
         min-height: auto;
         padding: 20px 30px;
     }
+    .mobile-stretch {
+        width: 100%;
+    }
+
+    #section-reviews__header h1 {
+        text-align: center;
+    }
+
 }
 #section-team__team-carousel img {
     border-radius: 100%;
@@ -341,7 +439,7 @@ p {
     vertical-align: middle;
 }
 
-.glyphicon-star {
+#slider .fa-star {
     color: gold;
 }
 
@@ -371,7 +469,6 @@ p {
 }
 
 #section-reviews__header {
-    height: 290px;
     background-image: url('images/reviews-irene-banner.jpg');
     background-size: cover;
     background-position: center center;
@@ -379,18 +476,12 @@ p {
 }
 
 #section-reviews__header .row {
-    margin: 20px;
 }
 
 #section-reviews__header a {
-    height: 55px;
-    width: 285px;
     display: block;
-    font-size: 18px;
-    font-weight: 500;
     line-height: 30px;
-    float: right;
-    margin-right: 30px;
+    margin-bottom: 30px;
 }
 
 #section-reviews__header h1,
@@ -435,6 +526,22 @@ p {
     padding: 0px;
     z-index: 5;
 }
+
+@media (max-width: 768px) {
+    #section-team__hooie-bio {
+        min-height: auto;
+        padding: 20px 30px;
+    }
+
+    .quote-text {
+    }
+
+    #section-reviews__header h1,
+    #section-reviews__header h3{
+        /* text-align: left; */
+    }
+
+}
 h5.ins-byline {
     font-size: 18px;
     color: #FFFFFF;
@@ -466,7 +573,6 @@ h5.ins-byline {
     background-image: url('images/membership-bkgd.jpg');
     background-size: cover;
     background-position: right center;
-    /* height: 562px; */
 }
 
 #section-insurance a {
@@ -479,10 +585,7 @@ h5.ins-byline {
     margin: 30px auto 80px;
 }
 
-#section-insurance h1,
-#section-insurance h4,
-#section-insurance h5,
-#section-insurance a {
+#section-insurance h1, #section-insurance h4, #section-insurance h5 {
     color: white;
 }
 
@@ -544,7 +647,7 @@ h5.ins-byline {
     text-decoration: underline !important;
     text-align: right;
     position: absolute;
-    right: 40px;
+    right: 25px;
     bottom: 20px;
 }
 
@@ -591,9 +694,11 @@ h5.ins-byline {
     letter-spacing: -0.25px;
     line-height: 23px;
     margin-bottom: 50px;
+    max-height: 2000px;
+    transition: 2s max-height ease;
+    overflow: hidden;
 }
 #section-services p.closed {
-    overflow: hidden;
     position: relative;
     line-height: 1.2em;
     max-height: 3.6em;
@@ -641,7 +746,6 @@ h5.ins-byline {
 }
 
 #carousel-smile-gallery img {
-    width: 100%;
 }
 
 #modal-video img {
@@ -676,9 +780,7 @@ h5.ins-byline {
 #section-location h1,
 #section-location h2,
 #section-location h3 {
-
-/* (888) 335-3249: */
-    font-family: Lato-Bold;
+    font-family: Lato-Bold, sans-serif;
     color: #F55433;
 }
 
@@ -722,7 +824,6 @@ h5.ins-byline {
 #section-location .address p.phone {
     margin: 25px 0;
 }
-
 #section-location p {
     margin: 0;
     line-height: normal;
@@ -793,9 +894,8 @@ h5.ins-byline {
     letter-spacing: -1px;
     font-size: 40px;
     text-transform: uppercase;
-    padding-top: 85px;
+    padding-top: 45px;
     margin-bottom: 0px;
-
 }
 
 #section-specials__header h2 {
