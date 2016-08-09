@@ -1040,3 +1040,22 @@ h5.ins-byline {
 .appointment_input_row {
     padding-bottom: 15px;
 }
+
+#footer {
+    background: #818386;
+    font-size: 14px;
+    color: #FFFFFF;
+    border-top: 0px;
+
+}
+
+#copyrights_custom {
+    padding: 40px 0;
+    /* background-color: #DDD; */
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+#copyrights_custom a {
+    color: #ffffff;
+}
