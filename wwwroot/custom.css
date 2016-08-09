@@ -1074,9 +1074,8 @@ h5.ins-byline {
 }
 
 #gotoFacebook {
-    display: none;
     z-index: 299;
-    position: fixed;
+    position: absolute;
     width: 40px;
     height: 40px;
     background-color: #333;
@@ -1098,9 +1097,8 @@ h5.ins-byline {
 }
 
 #gotoGoogle {
-    display: none;
     z-index: 299;
-    position: fixed;
+    position: absolute;
     width: 40px;
     height: 40px;
     background-color: #333;
@@ -1122,9 +1120,8 @@ h5.ins-byline {
 }
 
 #gotoYoutube {
-    display: none;
     z-index: 299;
-    position: fixed;
+    position: absolute;
     width: 40px;
     height: 40px;
     background-color: #333;
@@ -1141,8 +1138,17 @@ h5.ins-byline {
     border-radius: 2px;
 }
 
-
-
 .stretched #gotoYoutube {
     bottom: 30px;
+}
+
+@media screen and (max-width: 1190px) {
+    #gotoFacebook,
+    #gotoGoogle,
+    #gotoYoutube {
+        position: relative;
+        right: auto;
+        display: inline-block;
+        margin: 5px;
+    }
 }
