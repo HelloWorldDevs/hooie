@@ -219,22 +219,19 @@ p {
     margin: 0px 16px;
 }
 
-/*======== fix missing row issue with bootstrap ======*/
 .col-xs-6:nth-child(2n+1) {
     clear: left;
 }
 
 @media (min-width: 992px) {
-    .col-xs-6:nth-child(2n+1) {
+    .services .col-xs-6:nth-child(2n+1) {
         clear: none;
     }
 
-    .col-md-4:nth-child(3n+1) {
+    .services .col-md-4:nth-child(3n+1) {
         clear: left;
     }
 }
-
-/*======== fix missing row issue with bootstrap ======*/
 
 @media (max-width: 991px) {
     .section-phone__right a {
@@ -665,21 +662,6 @@ h5.ins-byline {
 .section-services__service-tile {
     margin-bottom: 15px;
 }
-
-/*======== fix missing row issue with bootstrap ======*/
-.col-xs-6:nth-child(2n+1) {
-    clear: left;
-}
-
-@media (min-width: 992px) {
-    .col-xs-6:nth-child(2n+1) {
-        clear: none;
-    }
-    .col-md-4:nth-child(3n+1) {
-        clear: left;
-    }
-}
-/*======== fix missing row issue with bootstrap ======*/
 
 .section-services__service-tile a {
 
