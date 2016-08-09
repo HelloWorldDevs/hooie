@@ -127,7 +127,6 @@ p {
   background: #000;
 }
 #slider .btn-inverted {
-    border-radius: 0px;
     margin-top: 30px;
 }
 
@@ -456,7 +455,7 @@ p {
     }
 }
 /*Reviews*/
-.ins-byline {font-family: "Crimson Text", serif;font-size: 20px;font-weight: normal;color: #FFFFFF;line-height: 20px;}
+.ins-byline {font-family: "Crimson Text", serif;font-size: 20px;font-weight: 700;color: #FFFFFF;line-height: 20px;}
 .btn-inverted {
     border-width: 2px;
 }
@@ -849,7 +848,7 @@ h5.ins-byline {
 }
 #section-location__hours {
     padding: 0 20px;
-    background-color: #efeeee;
+    background: #F6F6F6;
 }
 
 #section-location__hours tr:first-child {
