@@ -552,7 +552,7 @@ h5.ins-byline {
 }
 .vertical-scroll {
     overflow-y: auto;
-    height: 400px;
+    min-height: 400px;
 }
 .inner-shadow {
     box-shadow: inset 2px 2px 4px rgba(0,0,0,.5);
