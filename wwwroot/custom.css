@@ -464,6 +464,7 @@ p {
     box-shadow: 0 2px 4px rgba(0, 0, 0, .5);
     z-index: 1;
     position: relative;
+    padding-bottom: 40px;
 }
 
 #section-reviews__header {
@@ -846,6 +847,10 @@ h5.ins-byline {
     height: 405px;
 }
 
+#section-location__map:hover {
+    cursor: pointer;
+}
+
 #contact-logo {
     font-family: 'Raleway', sans-serif;
     font-size: 36px;
@@ -1026,4 +1031,12 @@ h5.ins-byline {
         font-size: 70px;
     }
 
+}
+
+.appointment_form {
+    width: 100%;
+}
+
+.appointment_input_row {
+    padding-bottom: 15px;
 }
