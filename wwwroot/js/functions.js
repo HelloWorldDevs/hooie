@@ -298,8 +298,10 @@ var SEMICOLON = SEMICOLON || {};
 
 			if( $window.scrollTop() > Number(elementOffset) ) {
 				$goToTopEl.fadeIn();
+				$goToSocialMedia.fadeIn();
 			} else {
 				$goToTopEl.fadeOut();
+				$goToSocialMedia.fadeOut();
 			}
 		},
 
@@ -3650,7 +3652,8 @@ var SEMICOLON = SEMICOLON || {};
 		$topSocialEl = $('#top-social').find('li'),
 		$siStickyEl = $('.si-sticky'),
 		$dotsMenuEl = $('.dots-menu'),
-		$goToTopEl = $('#gotoTop, #gotoFacebook, #gotoYoutube, #gotoGoogle'),
+		$goToTopEl = $('#gotoTop'),
+		$goToSocialMedia = $('#gotoFacebook, #gotoYoutube, #gotoGoogle'),
 		$fullScreenEl = $('.full-screen'),
 		$commonHeightEl = $('.common-height'),
 		$testimonialsGridEl = $('.testimonials-grid'),
