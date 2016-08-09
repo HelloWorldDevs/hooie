@@ -413,11 +413,13 @@ p {
     padding-bottom: 19px;
 }
 #header.sticky-header:not(.static-sticky), #header.sticky-header:not(.static-sticky) #header-wrap {
-    height: 80px;
+    /*height: 80px;*/
+    height: 100px;
     z-index: 100;
 }
 #header.sticky-header:not(.static-sticky):not(.sticky-style-2):not(.sticky-style-3) #logo img {
-    height: 60px;
+    /*height: 60px;*/
+    height: 80px;
 }
 /*Misc*/
 .right-border {
@@ -1024,7 +1026,7 @@ h5.ins-byline {
         display: none;
     }
     #section-reviews__table {
-        padding: 0px 40px;
+        /*padding: 0px 40px;*/
     }
 }
 @media (min-width: 768px) and (max-width: 1110px) {
