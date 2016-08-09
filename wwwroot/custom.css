@@ -8,6 +8,14 @@ p {
 }
 /*Buttons*/
 
+a {
+    color: white;
+}
+
+i:hover {
+    cursor: pointer;
+}
+
 .btn {
     padding: 12px 30px;
     font-weight: 500;
@@ -406,7 +414,7 @@ p {
     }
 }
 #header.sticky-header:not(.static-sticky) #primary-menu > ul > li > a {
-    padding-top: 28px;
+    padding-top: 40px;
     padding-bottom: 19px;
 }
 #header.sticky-header:not(.static-sticky), #header.sticky-header:not(.static-sticky) #header-wrap {
@@ -872,6 +880,11 @@ h5.ins-byline {
 
 #contact-logo a.retina-logo { display: none; }
 
+@media screen and (max-width: 768px) {
+    #logo img {
+        max-height: 80px;
+    }
+}
 @media screen and (max-width: 992px) {
 
     #section-location__map {
@@ -1058,4 +1071,78 @@ h5.ins-byline {
 
 #copyrights_custom a {
     color: #ffffff;
+}
+
+#gotoFacebook {
+    display: none;
+    z-index: 299;
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    background-color: rgba(0,0,0,0.3);
+    font-size: 20px;
+    line-height: 36px;
+    text-align: center;
+    color: #FFF;
+    top: auto;
+    left: auto;
+    right: 180px;
+    bottom: 50px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.stretched #gotoFacebook {
+    bottom: 30px;
+}
+
+#gotoGoogle {
+    display: none;
+    z-index: 299;
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    background-color: rgba(0,0,0,0.3);
+    font-size: 20px;
+    line-height: 36px;
+    text-align: center;
+    color: #FFF;
+    top: auto;
+    left: auto;
+    right: 130px;
+    bottom: 50px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.stretched #gotoGoogle {
+    bottom: 30px;
+}
+
+#gotoYoutube {
+    display: none;
+    z-index: 299;
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    background-color: rgba(0,0,0,0.3);
+    font-size: 20px;
+    line-height: 36px;
+    text-align: center;
+    color: #FFF;
+    top: auto;
+    left: auto;
+    right: 30px;
+    right: 80px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+
+
+.stretched #gotoYoutube {
+    bottom: 30px;
 }
