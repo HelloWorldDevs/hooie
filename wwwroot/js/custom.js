@@ -25,12 +25,7 @@
         slider.removeClass('preloader2');
       }
     });
-
-    $('.read-more').click(function (e) {
-      e.preventDefault();
-      $(this).prev().removeClass('closed');
-      $(this).hide();
-    });
+    
     $('.load-more').on("click", function () {
       HWD.rowNum += 1;
       HWD.fixRows();
