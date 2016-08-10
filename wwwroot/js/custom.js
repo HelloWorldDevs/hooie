@@ -25,7 +25,7 @@
         slider.removeClass('preloader2');
       }
     });
-    
+
     $('.load-more').on("click", function () {
       HWD.rowNum += 1;
       HWD.fixRows();
@@ -48,10 +48,36 @@
       }
     }
   };
+  HelloWorldDevs.prototype.mailForm = function (form) {
+    $(form).before('<div class="form-error"></div>');
+    $(form).submit(function (e) {
+      e.preventDefault();
+      var formData = $(form).serialize();
+      $.ajax({
+        type: 'POST',
+        // url: 'test.json',
+        url: 'error.php',
+        data: formData,
+        dataType: 'json',
+        encode: true
+      }).done(function (data) {
+        $(form).replaceWith(data.message);
+      }).error(function (e, r, message) {
+        message = (message) ? message : r;
+        $('.form-error').text(message);
+      });
+    });
+  };
 
+  HelloWorldDevs.prototype.copywriteYear = function (elem) {
+    var year = new Date().getFullYear();
+    $(elem).text(year);
+  };
   var HWD = new HelloWorldDevs();
   $(document).ready(function () {
     HWD.fixRows();
+    HWD.copywriteYear('.copywrite-year');
+    HWD.mailForm('#mail-form');
   });
   $(window).on("resize", function () {
     HWD.fixRows();
