@@ -69,15 +69,30 @@
     });
   };
 
+  HelloWorldDevs.prototype.externalLinks = function (elem) {
+    $(elem).each(function () {
+      var a = new RegExp('/' + window.location.host + '/');
+      if (!a.test(this.href)) {
+        $(this).click(function (event) {
+          event.preventDefault();
+          event.stopPropagation();
+          window.open(this.href, '_blank');
+        });
+      }
+    });
+  };
+
   HelloWorldDevs.prototype.copywriteYear = function (elem) {
     var year = new Date().getFullYear();
     $(elem).text(year);
   };
+
   var HWD = new HelloWorldDevs();
   $(document).ready(function () {
     HWD.fixRows();
     HWD.copywriteYear('.copywrite-year');
     HWD.mailForm('#mail-form');
+    HWD.externalLinks('a');
   });
   $(window).on("resize", function () {
     HWD.fixRows();

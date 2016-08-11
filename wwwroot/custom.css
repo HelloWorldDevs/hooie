@@ -58,7 +58,7 @@ i:hover {
     height: 100%;
 }
 
-/* Could use a pseudo-element, but theyâ€™re currently
+/* Could use a pseudo-element, but theyÃ¢â‚¬â„¢re currently
    super buggy. See: http://dabblet.com/gist/ab432c3f6a8f672cd077 */
 .image-slider > div {
     position: absolute;
@@ -476,11 +476,11 @@ i:hover {
 }
 
 #section-reviews__header {
-    background-image: url('images/reviews-irene-banner.jpg');
+    background-image: url('images/irenebg.jpg');
     background-size: cover;
     background-position: center center;
     text-align: right;
-    padding: 25px 0px;
+    position: relative;
 }
 
 #section-reviews__header .row {
@@ -580,7 +580,7 @@ h5.ins-byline {
 #section-insurance {
     background-image: url('images/membership-bkgd.jpg');
     background-size: cover;
-    background-position: right center;
+    background-position: 25% center;
 }
 
 #section-insurance a {
@@ -760,13 +760,6 @@ h5.ins-byline {
     width: 100%;
 }
 
-@media screen and (max-width: 992px) {
-    #section-gallery .row {
-        text-align: center;
-        padding: 0px 15%;
-        /* box-shadow: 0 2px 4px rgba(0,0,0,.5); */
-    }
-}
 
 
 /*Contact*/
@@ -813,6 +806,7 @@ h5.ins-byline {
     line-height: 30px;
     font-size: 18px;
     font-weight: 600;
+    margin-bottom: 20px;
 }
 .btn-lg {
     border-radius: 8px;
@@ -1143,6 +1137,28 @@ h5.ins-byline {
     bottom: 30px;
 }
 
+#slider .mobile {
+  display: none;
+}
+.irene  {
+  position: absolute;
+  bottom: 0px;
+  z-index:1;
+  right: 0px;
+}
+.aboveirene {
+  position: relative;
+  z-index:2;
+}
+@media (max-width: 767px) {
+    .slider-parallax-inner {
+        display: none;
+    }
+
+    #slider .mobile {
+        display: block;
+    }
+}
 @media screen and (max-width: 1190px) {
     #gotoFacebook,
     #gotoGoogle,
@@ -1152,4 +1168,23 @@ h5.ins-byline {
         display: inline-block;
         margin: 5px;
     }
+}
+
+@media screen and (max-width: 992px) {
+  #section-gallery .row {
+    text-align: center;
+    padding: 0px 15%;
+    /* box-shadow: 0 2px 4px rgba(0,0,0,.5); */
+  }
+
+  .irene {
+    display: none;
+  }
+  #section-reviews__header {
+    background-image: url('images/reviews-irene-banner.jpg');
+  }
+
+  .modal-header .close {
+    font-size: 30px;
+  }
 }
